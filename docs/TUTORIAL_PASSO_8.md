@@ -11,7 +11,9 @@ Conectar todos os componentes e o hook para formar a versão funcional da aplica
 - Como conectar dados e ações entre hook e componentes.
 
 ## 3. Código necessário
-### src/App.tsx
+### ✏️ Editar — `src/App.tsx`
+> Caminho completo: `to-do-app/src/App.tsx`.  
+> **Ação:** este arquivo já existe com o conteúdo temporário do Passo 2. Substitua **todo** o conteúdo pelo código abaixo.
 ```tsx
 import './App.css';
 import { TaskInput } from './components/TaskInput';

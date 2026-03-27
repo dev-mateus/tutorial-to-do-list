@@ -28,7 +28,34 @@ src/
   types/
 ```
 
-### src/vite-env.d.ts
+### Estrutura completa do projeto final
+> Use este mapa para saber onde cada arquivo fica. Ao longo do tutorial, cada passo indicará se o arquivo deve ser **criado** ou **editado**.
+
+```
+to-do-app/                   ← pasta raiz do projeto
+├── index.html               ← editado no Passo 2
+├── package.json             ← gerado automaticamente pelo Vite
+├── tsconfig.json            ← gerado automaticamente pelo Vite
+├── vite.config.ts           ← gerado automaticamente pelo Vite
+└── src/
+    ├── main.tsx             ← editado no Passo 2
+    ├── App.tsx              ← editado nos Passos 2 e 8
+    ├── App.css              ← editado no Passo 9
+    ├── index.css            ← editado no Passo 9
+    ├── vite-env.d.ts        ← criado neste Passo 1, verificado no Passo 10
+    ├── components/
+    │   ├── TaskInput.tsx    ← criado no Passo 5
+    │   ├── TaskItem.tsx     ← criado no Passo 6
+    │   └── TaskList.tsx     ← criado no Passo 7
+    ├── hooks/
+    │   └── useTasks.ts      ← criado no Passo 4
+    └── types/
+        └── Task.ts          ← criado no Passo 3
+```
+
+### 📄 Criar — `src/vite-env.d.ts`
+> Caminho completo: `to-do-app/src/vite-env.d.ts`.  
+> **Ação:** crie este arquivo na raiz da pasta `src/`.
 ```ts
 /// <reference types="vite/client" />
 ```

@@ -11,7 +11,9 @@ Garantir que o TypeScript entenda o ambiente do Vite sem gerar erros de import.
 - Por que esse arquivo evita erros de CSS importado no TypeScript.
 
 ## 3. Código necessário
-### src/vite-env.d.ts
+### ✅ Verificar — `src/vite-env.d.ts`
+> Caminho completo: `to-do-app/src/vite-env.d.ts`.  
+> **Ação:** este arquivo foi criado no Passo 1. Confirme que o conteúdo está exatamente como abaixo.
 ```ts
 /// <reference types="vite/client" />
 ```

@@ -12,7 +12,9 @@ Aplicar o visual final do projeto com CSS puro, incluindo responsividade.
 - Como destacar tarefas concluídas visualmente.
 
 ## 3. Código necessário
-### src/index.css
+### ✏️ Editar — `src/index.css`
+> Caminho completo: `to-do-app/src/index.css`.  
+> **Ação:** o Vite criou este arquivo com estilos padrão. Substitua **todo** o conteúdo pelo código abaixo.
 ```css
 :root {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -42,7 +44,9 @@ input {
 }
 ```
 
-### src/App.css
+### ✏️ Editar — `src/App.css`
+> Caminho completo: `to-do-app/src/App.css`.  
+> **Ação:** o Vite criou este arquivo com estilos padrão. Substitua **todo** o conteúdo pelo código abaixo.
 ```css
 .app-shell {
   min-height: 100vh;

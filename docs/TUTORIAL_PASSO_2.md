@@ -12,7 +12,9 @@ Entender como a aplicação nasce no navegador, do HTML até o componente React.
 - Como usar um App temporário para não pular etapas.
 
 ## 3. Código necessário
-### index.html
+### ✏️ Editar — `index.html`
+> Caminho completo: `to-do-app/index.html` (este arquivo fica na **raiz do projeto**, fora da pasta `src/`).  
+> **Ação:** o Vite já criou este arquivo — substitua todo o conteúdo pelo código abaixo.
 ```html
 <!doctype html>
 <html lang="pt-BR">
@@ -28,7 +30,9 @@ Entender como a aplicação nasce no navegador, do HTML até o componente React.
 </html>
 ```
 
-### src/main.tsx
+### ✏️ Editar — `src/main.tsx`
+> Caminho completo: `to-do-app/src/main.tsx`.  
+> **Ação:** o Vite já criou este arquivo — substitua todo o conteúdo pelo código abaixo.
 ```tsx
 import React from 'react';
 import ReactDOM from 'react-dom/client';
@@ -42,7 +46,9 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
 );
 ```
 
-### src/App.tsx (temporário)
+### ✏️ Editar — `src/App.tsx` (versão temporária)
+> Caminho completo: `to-do-app/src/App.tsx`.  
+> **Ação:** o Vite já criou este arquivo — substitua o conteúdo por esta versão simples. Ela será totalmente substituída no Passo 8.
 ```tsx
 function App() {
   return <h1>Projeto To-Do iniciado</h1>;

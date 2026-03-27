@@ -11,7 +11,9 @@ Criar o componente que representa uma tarefa individual.
 - Como cada item pode ter suas próprias ações.
 
 ## 3. Código necessário
-### src/components/TaskItem.tsx
+### 📄 Criar — `src/components/TaskItem.tsx`
+> Caminho completo: `to-do-app/src/components/TaskItem.tsx`.  
+> **Ação:** a pasta `src/components/` já existe do Passo 5. Crie o arquivo `TaskItem.tsx` dentro dela.
 ```tsx
 import type { Task } from '../types/Task';
 

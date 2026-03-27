@@ -12,7 +12,9 @@ Criar o formulário que recebe o texto da nova tarefa.
 - Como tratar submit sem recarregar a página.
 
 ## 3. Código necessário
-### src/components/TaskInput.tsx
+### 📄 Criar — `src/components/TaskInput.tsx`
+> Caminho completo: `to-do-app/src/components/TaskInput.tsx`.  
+> **Ação:** a pasta `src/components/` foi criada no Passo 1. Crie o arquivo `TaskInput.tsx` dentro dela.
 ```tsx
 import { FormEvent, useState } from 'react';
 

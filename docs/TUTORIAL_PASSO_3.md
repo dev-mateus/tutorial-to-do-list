@@ -11,7 +11,9 @@ Definir o formato padrão de uma tarefa para todo o projeto.
 - Como criar um contrato de dados com TypeScript.
 
 ## 3. Código necessário
-### src/types/Task.ts
+### 📄 Criar — `src/types/Task.ts`
+> Caminho completo: `to-do-app/src/types/Task.ts`.  
+> **Ação:** a pasta `src/types/` foi criada no Passo 1. Crie o arquivo `Task.ts` dentro dela.
 ```ts
 export interface Task {
   id: string;

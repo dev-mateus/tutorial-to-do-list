@@ -12,7 +12,9 @@ Montar o componente que exibe todas as tarefas e trata o caso de lista vazia.
 - Como mostrar uma mensagem quando não houver tarefas.
 
 ## 3. Código necessário
-### src/components/TaskList.tsx
+### 📄 Criar — `src/components/TaskList.tsx`
+> Caminho completo: `to-do-app/src/components/TaskList.tsx`.  
+> **Ação:** a pasta `src/components/` já existe dos Passos 5 e 6. Crie o arquivo `TaskList.tsx` dentro dela.
 ```tsx
 import type { Task } from '../types/Task';
 import { TaskItem } from './TaskItem';

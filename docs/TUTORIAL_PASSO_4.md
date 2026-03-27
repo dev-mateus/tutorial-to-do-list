@@ -12,7 +12,9 @@ Criar o hook useTasks para guardar estado, regras de negócio e persistência.
 - Como salvar e recuperar dados no localStorage.
 
 ## 3. Código necessário
-### src/hooks/useTasks.ts
+### 📄 Criar — `src/hooks/useTasks.ts`
+> Caminho completo: `to-do-app/src/hooks/useTasks.ts`.  
+> **Ação:** a pasta `src/hooks/` foi criada no Passo 1. Crie o arquivo `useTasks.ts` dentro dela.
 ```ts
 import { useEffect, useMemo, useState } from 'react';
 import type { Task } from '../types/Task';
