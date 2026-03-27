@@ -40,7 +40,7 @@ A aplicação final permite:
 ## Como estudar este tutorial
 O README funciona como esqueleto e guia principal.
 
-Cada etapa detalhada está em arquivos separados na pasta docs, seguindo o mesmo padrão didático:
+Cada etapa detalhada está em arquivos separados na pasta `docs/`, seguindo o mesmo padrão didático:
 - Objetivo do passo
 - O que será aprendido
 - Código necessário
@@ -70,7 +70,12 @@ Cada tutorial também inclui:
 Para cada tutorial, siga sempre esta ordem:
 1. Ler o passo completo.
 2. Aplicar o código do passo.
-3. Rodar e validar localmente.
+3. Rodar e validar localmente com o comando abaixo.
+
+```bash
+npm run dev
+```
+
 4. Confirmar que não há erros.
 5. Avançar para o próximo passo.
 
@@ -90,4 +95,9 @@ Você também terá praticado um fluxo profissional básico de desenvolvimento:
 - Implementar por etapas
 - Validar cada etapa
 - Corrigir erros no caminho
-- Finalizar com build e preview de produção
+- Finalizar com os comandos abaixo para gerar e validar a versão de produção
+
+```bash
+npm run build
+npm run preview
+```
