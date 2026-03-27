@@ -47,12 +47,14 @@ export const TaskInput = ({ onAddTask }: TaskInputProps) => {
 ```
 
 ## 4. Explicação linha a linha
-- Pense nesse componente como a porta de entrada das tarefas.
-- useState guarda o que o usuário digita.
-- value + onChange deixam o input controlado pelo React.
-- handleSubmit intercepta o envio para não recarregar a página.
-- onAddTask envia o texto para a lógica principal.
-- setTaskTitle limpa o campo para facilitar a próxima entrada.
+- FormEvent e useState são importados para tipar o envio do formulário e controlar o valor do campo.
+- TaskInputProps define que o componente precisa receber uma função onAddTask.
+- useState<string>('') cria o estado taskTitle com valor inicial vazio.
+- handleSubmit recebe o evento do formulário, chama preventDefault e impede o recarregamento da página.
+- onAddTask(taskTitle) envia o texto digitado para o componente pai.
+- setTaskTitle('') limpa o input após o envio.
+- value liga o input ao estado atual e onChange atualiza esse estado a cada digitação.
+- placeholder e aria-label melhoram a usabilidade e a acessibilidade do campo.
 
 ## 5. O que o aluno construiu
 Um formulário tipado, reutilizável e pronto para adicionar tarefas.
@@ -66,8 +68,8 @@ Um formulário tipado, reutilizável e pronto para adicionar tarefas.
 - Não tipar corretamente o evento do formulário.
 
 ## 8. Checkpoints de aprendizado
-- O input atualiza o estado enquanto você digita.
-- Ao enviar, onAddTask é chamado e o campo é limpo.
+- Rode npm run dev e verifique no navegador se a tela continua igual ao passo anterior, porque TaskInput foi criado mas ainda não foi renderizado pelo App.
+- Confirme no editor que o componente aceita a prop onAddTask sem erro de tipagem e que salvar o arquivo não quebra a compilação.
 
 ## 9. Resumo do capítulo
 Você criou uma entrada de dados controlada, pronta para alimentar a lista de tarefas.

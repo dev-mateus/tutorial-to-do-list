@@ -58,12 +58,12 @@ export default App;
 ```
 
 ## 4. Explicação linha a linha
-- Imagine que o HTML é o palco, e o React é o ator.
-- A div root é o local do palco onde o ator vai aparecer.
-- main.tsx pega o componente App e coloca dentro da root.
-- React.StrictMode ajuda a detectar problemas cedo.
-- O App temporário funciona como um teste rápido para garantir que tudo está conectado.
-- Mais adiante, no Passo 8, você troca esse App simples pela versão completa.
+- index.html define a estrutura mínima da página e contém a div com id root, que será o ponto de montagem do React.
+- O script type="module" aponta para src/main.tsx, que é o arquivo de entrada da aplicação.
+- main.tsx importa o App e o CSS global, criando a raiz React com ReactDOM.createRoot.
+- document.getElementById('root') localiza o elemento HTML onde a aplicação será renderizada.
+- React.StrictMode ativa verificações extras em desenvolvimento.
+- O App temporário retorna um h1 simples para validar que a renderização do React está funcionando antes da montagem completa.
 
 ## 5. O que o aluno construiu
 Um fluxo de inicialização funcionando de ponta a ponta: HTML, ReactDOM e App na tela.
@@ -77,8 +77,8 @@ Um fluxo de inicialização funcionando de ponta a ponta: HTML, ReactDOM e App n
 - Importar App com caminho errado no main.tsx.
 
 ## 8. Checkpoints de aprendizado
-- Consegue explicar o fluxo index.html para main.tsx para App.tsx.
-- A tela mostra o texto temporário sem erro.
+- Rode npm run dev e verifique no navegador se a página exibe o texto Projeto To-Do iniciado.
+- Confirme que não há erro no console do navegador e que alterar o texto em src/App.tsx atualiza a tela ao salvar.
 
 ## 9. Resumo do capítulo
 Você conectou HTML e React e confirmou que o app inicializa corretamente no navegador.

@@ -45,12 +45,14 @@ export const TaskItem = ({ task, onToggle, onRemove }: TaskItemProps) => {
 ```
 
 ## 4. Explicação linha a linha
-- Analogia: cada TaskItem é como uma linha de caderno da sua lista.
-- task traz os dados daquela linha específica.
-- onToggle muda o status da tarefa (feita ou pendente).
-- onRemove remove a linha da lista.
-- A classe is-completed permite estilo diferente para tarefa concluída.
-- O checkbox reflete o estado atual da tarefa.
+- O import type Task reutiliza a interface criada no Passo 3 para tipar a prop task.
+- TaskItemProps define as três entradas do componente: os dados da tarefa e duas funções de ação.
+- task fornece title, completed e id para a renderização do item.
+- onToggle recebe o id da tarefa quando o checkbox muda de valor.
+- onRemove recebe o id da tarefa quando o botão Remover é clicado.
+- className aplica is-completed somente quando task.completed for true.
+- checked mantém o checkbox sincronizado com o estado atual da tarefa.
+- aria-label melhora a descrição do checkbox para tecnologias assistivas.
 
 ## 5. O que o aluno construiu
 Um item de tarefa completo, com interação individual e visual adaptado ao status.
@@ -64,8 +66,8 @@ Um item de tarefa completo, com interação individual e visual adaptado ao stat
 - Esquecer de repassar o id para onToggle e onRemove.
 
 ## 8. Checkpoints de aprendizado
-- Checkbox altera o status da tarefa correta.
-- Botão remove o item certo da lista.
+- Rode npm run dev e verifique no navegador se a tela ainda continua igual ao passo anterior, porque TaskItem foi criado mas ainda não foi usado dentro da aplicação.
+- Confirme no editor que o componente TaskItem não apresenta erro de props e que o arquivo foi salvo com importações corretas.
 
 ## 9. Resumo do capítulo
 Você montou a unidade visual e funcional de cada tarefa individual.

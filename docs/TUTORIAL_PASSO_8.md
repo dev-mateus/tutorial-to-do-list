@@ -59,12 +59,14 @@ export default App;
 ```
 
 ## 4. Explicação linha a linha
-- Pense no App como um maestro: ele coordena, mas não toca todos os instrumentos.
-- useTasks entrega estado e funções prontas.
-- TaskInput recebe addTask para incluir novas tarefas.
-- task-stats mostra os contadores calculados no hook.
-- TaskList recebe tarefas e as funções de ação.
-- Assim, cada parte tem responsabilidade clara.
+- Os imports carregam o CSS da tela principal, os componentes de interface e o hook com as regras da feature.
+- useTasks() retorna o estado tasks, os contadores stats e as funções addTask, toggleTask e removeTask.
+- main.app-shell e section.todo-card organizam a estrutura principal da página.
+- O header exibe o título e o texto descritivo da aplicação.
+- TaskInput recebe addTask para encaminhar novas tarefas ao hook.
+- section.task-stats exibe os valores derivados de stats.total, stats.completed e stats.pending.
+- TaskList recebe a lista atual e as funções necessárias para marcar ou remover tarefas.
+- export default App mantém o componente disponível para renderização em src/main.tsx.
 
 ## 5. O que o aluno construiu
 A primeira versão completa da To-Do App, conectando interface, lógica e contadores.
@@ -78,8 +80,8 @@ A primeira versão completa da To-Do App, conectando interface, lógica e contad
 - Passar props com nomes diferentes dos esperados nos componentes.
 
 ## 8. Checkpoints de aprendizado
-- Consegue mapear quem fornece e quem consome cada prop.
-- Contadores e ações funcionam juntos na tela principal.
+- Rode npm run dev e verifique no navegador se a interface completa da lista de tarefas aparece, com título, campo de entrada, contadores e área da lista.
+- Adicione uma tarefa, marque como concluída e remova o item para confirmar que o hook e os componentes estão integrados corretamente.
 
 ## 9. Resumo do capítulo
 Você integrou componentes e hook em uma tela completa e funcional.

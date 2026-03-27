@@ -76,15 +76,19 @@ export const useTasks = () => {
 ```
 
 ## 4. Explicação linha a linha
-- Analogia: este hook é o motor da aplicação; os componentes serão a lataria.
-- useState guarda a lista de tarefas em memória.
-- A inicialização tenta carregar tarefas salvas no localStorage.
-- try/catch protege o app se o dado salvo estiver inválido.
-- useEffect salva novamente sempre que tasks muda.
-- addTask cria nova tarefa e impede entrada vazia.
-- toggleTask alterna concluída/pendente pelo id.
-- removeTask exclui tarefa pelo id.
-- useMemo calcula total, concluídas e pendentes de forma organizada.
+- Os imports carregam os hooks do React e o tipo Task usado para tipar estado e funções.
+- STORAGE_KEY define a chave fixa usada para salvar e recuperar as tarefas no localStorage.
+- createTask cria um objeto Task padronizado com id único, título recebido e completed iniciado como false.
+- useState<Task[]>(() => ...) cria o estado tasks e usa uma função inicializadora para ler o localStorage apenas na primeira renderização.
+- localStorage.getItem(STORAGE_KEY) busca tarefas salvas anteriormente.
+- O bloco if retorna uma lista vazia quando ainda não existe dado salvo.
+- try/catch tenta converter o JSON salvo em array de tarefas e evita quebrar a aplicação caso o conteúdo esteja inválido.
+- useEffect sincroniza o estado tasks com o localStorage sempre que a lista muda.
+- addTask normaliza o texto com trim, ignora entrada vazia e adiciona a nova tarefa no início da lista.
+- toggleTask percorre a lista e inverte o campo completed apenas da tarefa com o id recebido.
+- removeTask filtra a lista e remove a tarefa correspondente ao id informado.
+- useMemo calcula total, completed e pending a partir do estado atual, recalculando apenas quando tasks muda.
+- O retorno final expõe estado e ações para os componentes que consumirem o hook.
 
 ## 5. O que o aluno construiu
 Um motor completo da feature To-Do, com regras claras e persistência automática.
@@ -98,8 +102,8 @@ Um motor completo da feature To-Do, com regras claras e persistência automátic
 - Esquecer de tratar JSON inválido no carregamento inicial.
 
 ## 8. Checkpoints de aprendizado
-- Consegue explicar quando o useEffect é executado.
-- Consegue descrever o papel de addTask, toggleTask e removeTask.
+- Rode npm run dev e verifique no navegador se a tela ainda mostra Projeto To-Do iniciado, porque o hook foi criado mas ainda não está conectado ao App.
+- Confirme no editor que o arquivo src/hooks/useTasks.ts não apresenta erro e que o projeto continua compilando sem avisos de importação ou tipagem.
 
 ## 9. Resumo do capítulo
 Você construiu o motor da aplicação, com estado, regras e persistência local.

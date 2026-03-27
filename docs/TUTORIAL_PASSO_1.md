@@ -61,13 +61,12 @@ to-do-app/                   ← pasta raiz do projeto
 ```
 
 ## 4. Explicação linha a linha
-- Pense no projeto como uma casa: antes de decorar, você precisa da fundação.
-- npm create vite cria essa fundação pronta para React + TypeScript.
-- cd to-do-app entra na pasta do projeto.
-- npm install baixa os pacotes necessários.
-- npm run dev liga o servidor local para você testar no navegador.
-- A separação em components, hooks e types é como separar cômodos da casa: cada coisa no seu lugar.
-- O arquivo vite-env.d.ts ensina ao TypeScript como entender recursos do Vite, como import de CSS.
+- npm create vite@latest to-do-app -- --template react-ts gera um projeto React com TypeScript já configurado pelo Vite.
+- cd to-do-app muda o terminal para a pasta raiz do projeto, onde os próximos comandos serão executados.
+- npm install instala as dependências listadas no package.json.
+- npm run dev inicia o servidor de desenvolvimento local.
+- As pastas components, hooks e types preparam a organização do código por responsabilidade.
+- O arquivo src/vite-env.d.ts registra os tipos do Vite para que o TypeScript reconheça recursos do ambiente, como importação de CSS.
 
 ## 5. O que o aluno construiu
 Uma base profissional e organizada, pronta para receber as funcionalidades da To-Do App sem improviso.
@@ -81,8 +80,8 @@ Uma base profissional e organizada, pronta para receber as funcionalidades da To
 - Criar o projeto sem template TypeScript, usando react em vez de react-ts.
 
 ## 8. Checkpoints de aprendizado
-- Consegue abrir o projeto no navegador sem erro.
-- Entende para que servem package.json e vite.config.ts.
+- Rode npm run dev e verifique no navegador se a aplicação padrão do Vite abre sem tela em branco ou erro de compilação.
+- Confirme que a estrutura base do projeto existe na pasta to-do-app e que a pasta src já contém os arquivos principais gerados pelo Vite.
 
 ## 9. Resumo do capítulo
 Você montou a fundação do projeto e preparou o terreno para construir funcionalidades com segurança.

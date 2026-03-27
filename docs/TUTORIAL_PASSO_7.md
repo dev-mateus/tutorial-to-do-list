@@ -41,12 +41,13 @@ export const TaskList = ({ tasks, onToggleTask, onRemoveTask }: TaskListProps) =
 ```
 
 ## 4. Explicação linha a linha
-- Analogia: TaskList é a prancheta que organiza todos os TaskItem.
-- tasks recebe o conjunto de tarefas.
-- O if evita tela vazia sem explicação para o usuário.
-- map percorre a lista e cria um TaskItem para cada tarefa.
-- key ajuda o React a identificar cada item de forma única.
-- As funções de concluir e remover são repassadas para cada item.
+- O arquivo importa o tipo Task para tipar a lista recebida e importa TaskItem para renderizar cada elemento.
+- TaskListProps define que o componente recebe o array tasks e duas funções para alterar ou remover uma tarefa.
+- if (tasks.length === 0) faz um retorno antecipado quando não existem itens.
+- A mensagem Nenhuma tarefa cadastrada ainda. trata explicitamente o estado vazio da interface.
+- tasks.map(...) percorre o array e renderiza um TaskItem para cada objeto Task.
+- key={task.id} fornece uma chave estável para o React identificar corretamente cada item.
+- onToggleTask e onRemoveTask são repassadas para cada TaskItem com os nomes esperados pelo componente filho.
 
 ## 5. O que o aluno construiu
 Uma lista dinâmica e reutilizável, com boa experiência mesmo quando não há tarefas.
@@ -60,8 +61,8 @@ Uma lista dinâmica e reutilizável, com boa experiência mesmo quando não há 
 - Renderizar TaskItem sem repassar callbacks necessários.
 
 ## 8. Checkpoints de aprendizado
-- Mensagem de vazio aparece quando não há tarefas.
-- Com tarefas, a lista renderiza todos os itens corretamente.
+- Rode npm run dev e verifique no navegador se a tela ainda não mudou visualmente, porque TaskList foi criado mas ainda será conectado no Passo 8.
+- Confirme no editor que o componente aceita um array de tarefas e callbacks sem erro de tipagem.
 
 ## 9. Resumo do capítulo
 Você organizou a renderização da lista com boa experiência para cenários vazios e preenchidos.

@@ -19,10 +19,10 @@ Garantir que o TypeScript entenda o ambiente do Vite sem gerar erros de import.
 ```
 
 ## 4. Explicação linha a linha
-- Se no Passo 1 você já criou esse arquivo, aqui o foco é entender o motivo.
-- A linha triple-slash importa os tipos do cliente do Vite.
-- Com isso, o TypeScript reconhece melhor recursos de front-end, como import de CSS.
-- Resultado: menos erros de editor e mais previsibilidade no build.
+- Este passo revisa um arquivo já criado para garantir que o ambiente TypeScript continue configurado corretamente.
+- A diretiva /// <reference types="vite/client" /> adiciona ao projeto os tipos fornecidos pelo Vite.
+- Esses tipos permitem que imports de arquivos como CSS sejam reconhecidos sem erro pelo TypeScript.
+- Manter esse conteúdo correto evita falhas de tipagem no editor, no dev server e no build.
 
 ## 5. O que o aluno construiu
 Uma base de tipagem mais estável, com melhor suporte do editor e do compilador.
@@ -36,8 +36,8 @@ Uma base de tipagem mais estável, com melhor suporte do editor e do compilador.
 - Apagar a referência vite/client e voltar a ter erro de import de CSS.
 
 ## 8. Checkpoints de aprendizado
-- Projeto reconhece imports de CSS sem erro de tipagem.
-- Você entende por que esse arquivo existe.
+- Rode npm run dev e verifique no navegador se a aplicação continua abrindo normalmente após revisar o arquivo.
+- Confirme no editor que não existe erro de tipagem nos imports de CSS de src/main.tsx e src/App.tsx.
 
 ## 9. Resumo do capítulo
 Você reforçou a estabilidade de tipagem do ambiente Vite no projeto.

@@ -23,11 +23,11 @@ export interface Task {
 ```
 
 ## 4. Explicação linha a linha
-- Pense na interface como uma ficha de cadastro: toda tarefa precisa seguir esse formato.
-- id: identificador único da tarefa.
-- title: texto da tarefa.
-- completed: informa se a tarefa já foi concluída.
-- export permite reutilizar esse tipo em vários arquivos.
+- export disponibiliza a interface para importação em outros arquivos do projeto.
+- interface Task define o formato obrigatório de uma tarefa no TypeScript.
+- id: string representa o identificador único de cada item.
+- title: string representa o texto exibido para a tarefa.
+- completed: boolean representa o estado da tarefa, concluída ou pendente.
 
 ## 5. O que o aluno construiu
 Um contrato único para tarefas, deixando a comunicação entre componentes mais segura e previsível.
@@ -41,8 +41,8 @@ Um contrato único para tarefas, deixando a comunicação entre componentes mais
 - Criar tipos diferentes para a mesma entidade em arquivos distintos.
 
 ## 8. Checkpoints de aprendizado
-- Consegue explicar cada campo de Task.
-- Entende por que tipagem reduz erros na passagem de props.
+- Rode npm run dev e verifique no navegador se a tela continua exibindo Projeto To-Do iniciado, sem mudanças visuais neste passo.
+- Confirme no editor que a interface Task foi criada sem erro de sintaxe e que o projeto continua compilando normalmente.
 
 ## 9. Resumo do capítulo
 Você criou o contrato de dados da tarefa e padronizou a estrutura usada no projeto.
