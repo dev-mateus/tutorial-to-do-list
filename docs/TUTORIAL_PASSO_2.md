@@ -58,8 +58,8 @@ export default App;
 ```
 
 ## 4. Explicação linha a linha
-- index.html define a estrutura mínima da página e contém a div com id root, que será o ponto de montagem do React.
-- O script type="module" aponta para src/main.tsx, que é o arquivo de entrada da aplicação.
+- `index.html` define a estrutura mínima da página e contém a div com id root, que será o ponto de montagem do React.
+- O script type="module" aponta para `src/main.tsx`, que é o arquivo de entrada da aplicação.
 - main.tsx importa o App e o CSS global, criando a raiz React com ReactDOM.createRoot.
 - document.getElementById('root') localiza o elemento HTML onde a aplicação será renderizada.
 - React.StrictMode ativa verificações extras em desenvolvimento.
@@ -69,7 +69,7 @@ export default App;
 Um fluxo de inicialização funcionando de ponta a ponta: HTML, ReactDOM e App na tela.
 
 ## 6. Dicas
-- Pense no index.html como a porta de entrada da aplicação.
+- Pense no arquivo `index.html` como a porta de entrada da aplicação.
 - Mantenha o App temporário simples para testar o fluxo.
 
 ## 7. Erros comuns
@@ -83,7 +83,7 @@ Um fluxo de inicialização funcionando de ponta a ponta: HTML, ReactDOM e App n
 npm run dev
 ```
 
-- Confirme que não há erro no console do navegador e que alterar o texto em src/App.tsx atualiza a tela ao salvar.
+- Confirme que não há erro no console do navegador e que alterar o texto em `src/App.tsx` atualiza a tela ao salvar.
 
 ## 9. Resumo do capítulo
 Você conectou HTML e React e confirmou que o app inicializa corretamente no navegador.

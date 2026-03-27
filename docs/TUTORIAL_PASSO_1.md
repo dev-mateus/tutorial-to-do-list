@@ -67,8 +67,13 @@ to-do-app/                   ← pasta raiz do projeto
 npm create vite@latest to-do-app -- --template react-ts
 ```
 
-- cd to-do-app muda o terminal para a pasta raiz do projeto, onde os próximos comandos serão executados.
-- O comando abaixo instala as dependências listadas no package.json.
+- O comando abaixo muda o terminal para a pasta raiz do projeto, onde os próximos comandos serão executados.
+
+```bash
+cd to-do-app
+```
+
+- O comando abaixo instala as dependências listadas no `package.json`.
 
 ```bash
 npm install
@@ -81,7 +86,7 @@ npm run dev
 ```
 
 - As pastas components, hooks e types preparam a organização do código por responsabilidade.
-- O arquivo src/vite-env.d.ts registra os tipos do Vite para que o TypeScript reconheça recursos do ambiente, como importação de CSS.
+- O arquivo `src/vite-env.d.ts` registra os tipos do Vite para que o TypeScript reconheça recursos do ambiente, como importação de CSS.
 
 ## 5. O que o aluno construiu
 Uma base profissional e organizada, pronta para receber as funcionalidades da To-Do App sem improviso.

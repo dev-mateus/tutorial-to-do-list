@@ -66,7 +66,7 @@ export default App;
 - TaskInput recebe addTask para encaminhar novas tarefas ao hook.
 - section.task-stats exibe os valores derivados de stats.total, stats.completed e stats.pending.
 - TaskList recebe a lista atual e as funções necessárias para marcar ou remover tarefas.
-- export default App mantém o componente disponível para renderização em src/main.tsx.
+- export default App mantém o componente disponível para renderização em `src/main.tsx`.
 
 ## 5. O que o aluno construiu
 A primeira versão completa da To-Do App, conectando interface, lógica e contadores.

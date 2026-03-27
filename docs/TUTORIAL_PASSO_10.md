@@ -42,7 +42,7 @@ Uma base de tipagem mais estável, com melhor suporte do editor e do compilador.
 npm run dev
 ```
 
-- Confirme no editor que não existe erro de tipagem nos imports de CSS de src/main.tsx e src/App.tsx.
+- Confirme no editor que não existe erro de tipagem nos imports de CSS de `src/main.tsx` e `src/App.tsx`.
 
 ## 9. Resumo do capítulo
 Você reforçou a estabilidade de tipagem do ambiente Vite no projeto.

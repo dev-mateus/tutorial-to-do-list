@@ -108,7 +108,7 @@ Um motor completo da feature To-Do, com regras claras e persistência automátic
 npm run dev
 ```
 
-- Confirme no editor que o arquivo src/hooks/useTasks.ts não apresenta erro e que o projeto continua compilando sem avisos de importação ou tipagem.
+- Confirme no editor que o arquivo `src/hooks/useTasks.ts` não apresenta erro e que o projeto continua compilando sem avisos de importação ou tipagem.
 
 ## 9. Resumo do capítulo
 Você construiu o motor da aplicação, com estado, regras e persistência local.
