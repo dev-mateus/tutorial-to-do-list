@@ -4,7 +4,7 @@
 > Capítulo 1 de 11
 
 ## 1. Objetivo do passo
-Criar o projeto do zero com React, Vite e TypeScript, deixando tudo pronto para os próximos passos.
+Criar o projeto do zero com `React`, `Vite` e `TypeScript`, deixando tudo pronto para os próximos passos.
 
 ## 2. O que será aprendido
 - Por que começar pela base evita dor de cabeça depois.
@@ -12,7 +12,9 @@ Criar o projeto do zero com React, Vite e TypeScript, deixando tudo pronto para 
 - Como organizar as pastas principais para estudar com clareza.
 
 ## 3. Código necessário
-### Comandos iniciais
+### Bloco de Comando — Criar e iniciar o projeto
+> Tipo: `Comando`  
+> Ação: `Executar` no terminal, fora do projeto, para criar a pasta inicial e iniciar o ambiente.
 ```bash
 npm create vite@latest to-do-app -- --template react-ts
 cd to-do-app
@@ -53,15 +55,16 @@ to-do-app/                   ← pasta raiz do projeto
         └── Task.ts          ← criado no Passo 3
 ```
 
-### 📄 Criar — `src/vite-env.d.ts`
-> Caminho completo: `to-do-app/src/vite-env.d.ts`.  
-> **Ação:** crie este arquivo na raiz da pasta `src/`.
+### Bloco de Arquivo — Criar `src/vite-env.d.ts`
+> Tipo: `Arquivo`  
+> Ação: `Criar`  
+> Caminho completo: `to-do-app/src/vite-env.d.ts`.
 ```ts
 /// <reference types="vite/client" />
 ```
 
 ## 4. Explicação linha a linha
-- O comando abaixo gera um projeto React com TypeScript já configurado pelo Vite.
+- O comando abaixo gera um projeto `React` com `TypeScript` já configurado pelo `Vite`.
 
 ```bash
 npm create vite@latest to-do-app -- --template react-ts
@@ -73,20 +76,20 @@ npm create vite@latest to-do-app -- --template react-ts
 cd to-do-app
 ```
 
-- O comando abaixo instala as dependências listadas no `package.json`.
+- O comando abaixo instala as dependências listadas no arquivo `package.json`.
 
 ```bash
 npm install
 ```
 
-- O comando abaixo inicia o servidor de desenvolvimento local.
+- O comando abaixo inicia o `servidor de desenvolvimento` local.
 
 ```bash
 npm run dev
 ```
 
-- As pastas components, hooks e types preparam a organização do código por responsabilidade.
-- O arquivo `src/vite-env.d.ts` registra os tipos do Vite para que o TypeScript reconheça recursos do ambiente, como importação de CSS.
+- As pastas `components`, `hooks` e `types` preparam a organização do código por responsabilidade.
+- O arquivo `src/vite-env.d.ts` registra os tipos do `Vite` para que o `TypeScript` reconheça recursos do ambiente, como importação de `CSS`.
 
 ## 5. O que o aluno construiu
 Uma base profissional e organizada, pronta para receber as funcionalidades da To-Do App sem improviso.
@@ -98,7 +101,7 @@ Uma base profissional e organizada, pronta para receber as funcionalidades da To
 npm run dev
 ```
 
-- Crie as pastas components, hooks e types no início para evitar bagunça depois.
+- Crie as pastas `components`, `hooks` e `types` no início para evitar bagunça depois.
 
 ## 7. Erros comuns
 - Esquecer de executar os comandos abaixo na ordem correta.
@@ -108,7 +111,7 @@ npm install
 npm run dev
 ```
 
-- Criar o projeto sem template TypeScript, usando react em vez de react-ts.
+- Criar o projeto sem o template `TypeScript`, usando `react` em vez de `react-ts`.
 
 ## 8. Checkpoints de aprendizado
 - Execute o comando abaixo e verifique no navegador se a aplicação padrão do Vite abre sem tela em branco ou erro de compilação.
@@ -117,7 +120,7 @@ npm run dev
 npm run dev
 ```
 
-- Confirme que a estrutura base do projeto existe na pasta to-do-app e que a pasta src já contém os arquivos principais gerados pelo Vite.
+- Confirme que a estrutura base do projeto existe na pasta `to-do-app` e que a pasta `src` já contém os arquivos principais gerados pelo `Vite`.
 
 ## 9. Resumo do capítulo
 Você montou a fundação do projeto e preparou o terreno para construir funcionalidades com segurança.

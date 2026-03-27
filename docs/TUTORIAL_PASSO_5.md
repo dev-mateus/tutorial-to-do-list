@@ -8,13 +8,14 @@ Criar o formulário que recebe o texto da nova tarefa.
 
 ## 2. O que será aprendido
 - Por que separar a entrada de dados em um componente próprio.
-- Como funciona input controlado no React.
-- Como tratar submit sem recarregar a página.
+- Como funciona `input` controlado no `React`.
+- Como tratar `submit` sem recarregar a página.
 
 ## 3. Código necessário
-### 📄 Criar — `src/components/TaskInput.tsx`
-> Caminho completo: `to-do-app/src/components/TaskInput.tsx`.  
-> **Ação:** a pasta `src/components/` foi criada no Passo 1. Crie o arquivo `TaskInput.tsx` dentro dela.
+### Bloco de Arquivo — Criar `src/components/TaskInput.tsx`
+> Tipo: `Arquivo`  
+> Ação: `Criar`  
+> Caminho completo: `to-do-app/src/components/TaskInput.tsx`.
 ```tsx
 import { FormEvent, useState } from 'react';
 
@@ -47,24 +48,24 @@ export const TaskInput = ({ onAddTask }: TaskInputProps) => {
 ```
 
 ## 4. Explicação linha a linha
-- FormEvent e useState são importados para tipar o envio do formulário e controlar o valor do campo.
-- TaskInputProps define que o componente precisa receber uma função onAddTask.
-- useState<string>('') cria o estado taskTitle com valor inicial vazio.
-- handleSubmit recebe o evento do formulário, chama preventDefault e impede o recarregamento da página.
-- onAddTask(taskTitle) envia o texto digitado para o componente pai.
-- setTaskTitle('') limpa o input após o envio.
-- value liga o input ao estado atual e onChange atualiza esse estado a cada digitação.
-- placeholder e aria-label melhoram a usabilidade e a acessibilidade do campo.
+- `FormEvent` e `useState` são importados para tipar o envio do formulário e controlar o valor do campo.
+- `TaskInputProps` define que o componente precisa receber uma função `onAddTask`.
+- `useState<string>('')` cria o estado `taskTitle` com valor inicial vazio.
+- `handleSubmit` recebe o evento do formulário, chama `preventDefault` e impede o recarregamento da página.
+- `onAddTask(taskTitle)` envia o texto digitado para o componente pai.
+- `setTaskTitle('')` limpa o `input` após o envio.
+- `value` liga o `input` ao estado atual e `onChange` atualiza esse estado a cada digitação.
+- `placeholder` e `aria-label` melhoram a usabilidade e a acessibilidade do campo.
 
 ## 5. O que o aluno construiu
 Um formulário tipado, reutilizável e pronto para adicionar tarefas.
 
 ## 6. Dicas
-- Trate o submit com preventDefault para evitar recarga da página.
-- Limpe o input após adicionar para melhorar a experiência do usuário.
+- Trate o `submit` com `preventDefault` para evitar recarga da página.
+- Limpe o `input` após adicionar para melhorar a experiência do usuário.
 
 ## 7. Erros comuns
-- Esquecer de controlar o valor do input com useState.
+- Esquecer de controlar o valor do `input` com `useState`.
 - Não tipar corretamente o evento do formulário.
 
 ## 8. Checkpoints de aprendizado

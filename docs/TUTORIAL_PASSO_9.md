@@ -4,17 +4,18 @@
 > Capítulo 9 de 11
 
 ## 1. Objetivo do passo
-Aplicar o visual final do projeto com CSS puro, incluindo responsividade.
+Aplicar o visual final do projeto com `CSS` puro, incluindo responsividade.
 
 ## 2. O que será aprendido
-- Por que separar CSS global de CSS da tela principal.
-- Como usar flexbox para layout.
+- Por que separar `CSS` global de `CSS` da tela principal.
+- Como usar `flexbox` para layout.
 - Como destacar tarefas concluídas visualmente.
 
 ## 3. Código necessário
-### ✏️ Editar — `src/index.css`
-> Caminho completo: `to-do-app/src/index.css`.  
-> **Ação:** o Vite criou este arquivo com estilos padrão. Substitua **todo** o conteúdo pelo código abaixo.
+### Bloco de Arquivo — Editar `src/index.css`
+> Tipo: `Arquivo`  
+> Ação: `Editar`  
+> Caminho completo: `to-do-app/src/index.css`.
 ```css
 :root {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -44,9 +45,10 @@ input {
 }
 ```
 
-### ✏️ Editar — `src/App.css`
-> Caminho completo: `to-do-app/src/App.css`.  
-> **Ação:** o Vite criou este arquivo com estilos padrão. Substitua **todo** o conteúdo pelo código abaixo.
+### Bloco de Arquivo — Editar `src/App.css`
+> Tipo: `Arquivo`  
+> Ação: `Editar`  
+> Caminho completo: `to-do-app/src/App.css`.
 ```css
 .app-shell {
   min-height: 100vh;
@@ -241,32 +243,32 @@ input {
 ```
 
 ## 4. Explicação linha a linha
-- index.css define regras globais da aplicação, como fonte padrão, cores base, reset de margem e padding e estilo geral do body.
-- O seletor :root centraliza valores globais de tipografia e cor aplicados ao documento.
-- O seletor * aplica box-sizing: border-box e remove espaçamentos padrão do navegador.
-- body recebe altura mínima da viewport e um fundo com gradientes para compor o cenário da página.
-- button e input herdam a fonte configurada globalmente para manter consistência visual.
-- App.css contém os estilos específicos da tela da lista de tarefas.
-- .app-shell centraliza o card principal na tela.
-- .todo-card define largura, espaçamento interno, borda, sombra e aparência do bloco principal.
-- .todo-header, .badge e os seletores internos do cabeçalho ajustam espaçamento, destaque e hierarquia visual do título.
-- .task-input e seus seletores internos organizam o campo e o botão, incluindo foco e hover.
-- .task-stats e .task-stats article definem a grade dos contadores.
-- .task-list remove marcadores padrão e organiza os itens em coluna com espaçamento.
-- .task-item, .task-item.is-completed e os seletores internos controlam o layout do item, o checkbox, o botão de remoção e o visual de tarefa concluída.
-- .empty-list estiliza a mensagem exibida quando não há tarefas.
-- @media (max-width: 640px) adapta o layout para telas menores, empilhando elementos que antes estavam em linha.
+- `index.css` define regras globais da aplicação, como fonte padrão, cores base, `reset` de margem e `padding` e estilo geral do `body`.
+- O seletor `:root` centraliza valores globais de tipografia e cor aplicados ao documento.
+- O seletor `*` aplica `box-sizing: border-box` e remove espaçamentos padrão do navegador.
+- `body` recebe altura mínima da `viewport` e um fundo com gradientes para compor o cenário da página.
+- `button` e `input` herdam a fonte configurada globalmente para manter consistência visual.
+- `App.css` contém os estilos específicos da tela da lista de tarefas.
+- `.app-shell` centraliza o card principal na tela.
+- `.todo-card` define largura, espaçamento interno, borda, sombra e aparência do bloco principal.
+- `.todo-header`, `.badge` e os seletores internos do cabeçalho ajustam espaçamento, destaque e hierarquia visual do título.
+- `.task-input` e seus seletores internos organizam o campo e o botão, incluindo `:focus` e `:hover`.
+- `.task-stats` e `.task-stats article` definem a grade dos contadores.
+- `.task-list` remove marcadores padrão e organiza os itens em coluna com espaçamento.
+- `.task-item`, `.task-item.is-completed` e os seletores internos controlam o layout do item, o `checkbox`, o botão de remoção e o visual de tarefa concluída.
+- `.empty-list` estiliza a mensagem exibida quando não há tarefas.
+- `@media (max-width: 640px)` adapta o layout para telas menores, empilhando elementos que antes estavam em linha.
 
 ## 5. O que o aluno construiu
 A interface final, limpa e responsiva, igual ao resultado esperado do projeto.
 
 ## 6. Dicas
 - Separe estilo global de estilo da página para manter organização.
-- Teste responsividade reduzindo a largura da janela.
+- Teste a responsividade reduzindo a largura da janela.
 
 ## 7. Erros comuns
-- Misturar classes sem correspondência com o JSX.
-- Remover estilos de estados e perder feedback visual.
+- Misturar classes sem correspondência com o `JSX`.
+- Remover estilos de estados e perder `feedback` visual.
 
 ## 8. Checkpoints de aprendizado
 - Execute o comando abaixo e verifique no navegador se a aplicação aparece estilizada, centralizada na tela e diferente do visual padrão do Vite.

@@ -3,13 +3,13 @@
 ## Introdução
 Este repositório é um tutorial guiado para construir uma aplicação front-end de Lista de Tarefas (To-Do App), saindo do nível básico e evoluindo para um nível iniciante-intermediário.
 
-A proposta é aprender conceitos fundamentais de React com TypeScript em um projeto pequeno, realista e organizado, usando apenas CSS puro.
+A proposta é aprender conceitos fundamentais de `React` com `TypeScript` em um projeto pequeno, realista e organizado, usando apenas `CSS` puro.
 
 ## Objetivo do projeto
 Ensinar, passo a passo, como criar uma aplicação web aplicando boas práticas de front-end:
 - Componentes funcionais e reutilizáveis
-- Hooks para estado e efeitos
-- Tipagem com TypeScript
+- `Hooks` para estado e efeitos
+- Tipagem com `TypeScript`
 - Separação entre lógica, interface e estilos
 
 ## Resumo do que o projeto faz
@@ -19,11 +19,11 @@ A aplicação final permite:
 - Marcar tarefas como concluídas
 - Remover tarefas
 - Exibir contadores de total, concluídas e pendentes
-- Salvar os dados no localStorage para manter as tarefas após recarregar a página
+- Salvar os dados no `localStorage` para manter as tarefas após recarregar a página
 
 ## Para quem é este material
-- Quem está começando em React
-- Quem quer praticar TypeScript na prática
+- Quem está começando em `React`
+- Quem quer praticar `TypeScript` na prática
 - Quem quer aprender organização de projeto sem usar bibliotecas extras de estilo
 
 ## Stack
@@ -35,7 +35,7 @@ A aplicação final permite:
 ## Pré-requisitos recomendados
 - Saber o básico de HTML e CSS
 - Saber o básico de JavaScript (variáveis, funções e arrays)
-- Ter Node.js instalado
+- Ter `Node.js` instalado
 
 ## Como estudar este tutorial
 O README funciona como esqueleto e guia principal.
@@ -70,7 +70,11 @@ Cada tutorial também inclui:
 Para cada tutorial, siga sempre esta ordem:
 1. Ler o passo completo.
 2. Aplicar o código do passo.
-3. Rodar e validar localmente com o comando abaixo.
+3. Rodar e validar localmente.
+
+### Bloco de Comando — Validar localmente
+> Tipo: `Comando`  
+> Ação: `Executar` na pasta raiz do projeto.
 
 ```bash
 npm run dev
@@ -96,6 +100,10 @@ Você também terá praticado um fluxo profissional básico de desenvolvimento:
 - Validar cada etapa
 - Corrigir erros no caminho
 - Finalizar com os comandos abaixo para gerar e validar a versão de produção
+
+### Bloco de Comando — Validar produção
+> Tipo: `Comando`  
+> Ação: `Executar` na pasta raiz do projeto.
 
 ```bash
 npm run build
