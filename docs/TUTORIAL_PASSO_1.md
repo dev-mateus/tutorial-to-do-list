@@ -3,13 +3,29 @@
 # Tutorial Passo 1 - Criar base do projeto
 
 ## Objetivo do passo
-Criar a estrutura tecnica minima para desenvolver uma aplicacao React com TypeScript usando Vite.
+Criar o projeto do zero com React + Vite + TypeScript e preparar a estrutura inicial de pastas.
 
 ## O que sera aprendido
-- Por que todo projeto precisa de uma base de build e execucao.
-- Como scripts e configuracoes conectam desenvolvimento, compilacao e preview.
+- Por que comecar pelo bootstrap economiza tempo e evita erros de configuracao.
+- Como criar e validar a base tecnica antes de implementar funcionalidades.
 
 ## Codigo necessario
+### Comandos iniciais (do zero)
+```bash
+npm create vite@latest to-do-app -- --template react-ts
+cd to-do-app
+npm install
+npm run dev
+```
+
+### Estrutura de pastas a criar agora
+```txt
+src/
+  components/
+  hooks/
+  types/
+```
+
 ### package.json
 ```json
 {
@@ -63,11 +79,20 @@ export default defineConfig({
 {
   "compilerOptions": {
     "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": ["ES2020", "DOM", "DOM.Iterable"],
     "module": "ESNext",
+    "skipLibCheck": true,
     "moduleResolution": "bundler",
+    "allowImportingTsExtensions": false,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
     "jsx": "react-jsx",
     "strict": true,
-    "noEmit": true
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true
   },
   "include": ["src"]
 }
@@ -78,8 +103,10 @@ export default defineConfig({
 {
   "compilerOptions": {
     "composite": true,
+    "skipLibCheck": true,
     "module": "ESNext",
     "moduleResolution": "bundler",
+    "allowSyntheticDefaultImports": true,
     "types": ["node"],
     "strict": true
   },
@@ -87,7 +114,16 @@ export default defineConfig({
 }
 ```
 
+### src/vite-env.d.ts
+```ts
+/// <reference types="vite/client" />
+```
+
 ## Explicacao linha a linha
+- Primeiro, os comandos criam a base oficial do Vite com React e TypeScript.
+- npm install baixa as dependencias necessarias para rodar o projeto.
+- npm run dev valida se o ambiente inicial esta funcionando.
+- A criacao de components, hooks e types prepara a organizacao didatica da feature.
 - Em package.json, o bloco scripts define os comandos principais do projeto.
 - O script dev inicia o servidor local com Vite para desenvolvimento rapido.
 - O script build valida TypeScript e gera versao de producao.
@@ -99,9 +135,10 @@ export default defineConfig({
 - Em tsconfig.json, references divide a configuracao em duas partes.
 - tsconfig.app.json cobre o codigo da pasta src.
 - tsconfig.node.json cobre arquivos que rodam no ambiente Node.
+- vite-env.d.ts adiciona os tipos do Vite desde o inicio, evitando erro com import de CSS.
 
 ## O que o aluno construiu
-Uma base profissional para iniciar o app com React, TypeScript e Vite, pronta para rodar, compilar e evoluir com seguranca.
+Um projeto criado do zero, com estrutura inicial organizada e configuracao alinhada ao resultado final.
 
 [Voltar ao inicio](../README.md)
 

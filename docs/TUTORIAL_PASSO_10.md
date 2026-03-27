@@ -9,6 +9,11 @@ Garantir que TypeScript reconheca corretamente recursos do Vite, como imports de
 - Por que arquivos de declaracao evitam erros de tipagem.
 - Como habilitar tipos do cliente Vite no projeto.
 
+## Observacao de sequencia didatica
+Se voce ja criou este arquivo no Passo 1, aqui voce apenas valida e entende melhor o motivo dele existir.
+
+Se ainda nao criou, este e o momento de adicionar o arquivo para evitar erros de import de CSS.
+
 ## Codigo necessario
 ### src/vite-env.d.ts
 ```ts
@@ -21,7 +26,7 @@ Garantir que TypeScript reconheca corretamente recursos do Vite, como imports de
 - Com isso, o editor e o build entendem melhor o ambiente do projeto.
 
 ## O que o aluno construiu
-Uma configuracao de tipos mais estavel, reduzindo erros de desenvolvimento no Vite.
+Uma configuracao de tipos estavel e consciente, entendendo quando e por que usar vite-env.d.ts.
 
 [Voltar ao inicio](../README.md)
 

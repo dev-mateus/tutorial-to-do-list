@@ -50,5 +50,13 @@ Cada etapa detalhada esta em arquivos separados na pasta docs, seguindo o mesmo 
 10. [Passo 10 - Tipos do Vite](docs/TUTORIAL_PASSO_10.md)
 11. [Passo 11 - Rodar e validar](docs/TUTORIAL_PASSO_11.md)
 
+## Checklist de execucao por passo
+Para cada tutorial, siga sempre esta ordem:
+1. Ler o passo completo.
+2. Aplicar o codigo do passo.
+3. Rodar e validar localmente.
+4. Confirmar que nao ha erros.
+5. Avancar para o proximo passo.
+
 ## Resultado esperado ao final
 Ao concluir os 11 passos, voce tera uma To-Do App completa, tipada com TypeScript, organizada por responsabilidade e pronta para servir como base de estudos e evolucao.

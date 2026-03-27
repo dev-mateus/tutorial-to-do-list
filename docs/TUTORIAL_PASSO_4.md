@@ -8,6 +8,16 @@ Criar um hook para concentrar estado, acoes e persistencia das tarefas.
 ## O que sera aprendido
 - Por que separar logica de negocio do componente App.
 - Como usar useState, useEffect e useMemo em conjunto.
+- Por que preparar a logica antes da tela final acelera os proximos passos.
+
+## Por que este passo vem antes da montagem final do App
+Neste tutorial, criamos primeiro o "motor" da funcionalidade (hook) e depois conectamos tudo na tela principal.
+
+Isso ajuda iniciantes a entenderem melhor a diferenca entre:
+- logica (estado, regras, persistencia)
+- interface (componentes visuais)
+
+No Passo 8, voce vai usar este hook pronto para montar o App final com menos complexidade.
 
 ## Codigo necessario
 ### src/hooks/useTasks.ts

@@ -8,6 +8,7 @@ Entender e montar o fluxo de inicializacao da aplicacao no navegador.
 ## O que sera aprendido
 - Por que existe um arquivo HTML base mesmo em projeto React.
 - Como React entra na pagina e renderiza o App.
+- Como criar um App temporario para manter a trilha progressiva.
 
 ## Codigo necessario
 ### index.html
@@ -40,6 +41,15 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
 );
 ```
 
+### src/App.tsx (temporario neste passo)
+```tsx
+function App() {
+  return <h1>Projeto To-Do iniciado</h1>;
+}
+
+export default App;
+```
+
 ## Explicacao linha a linha
 - Em index.html, a div root e o ponto onde o React vai desenhar a tela.
 - O script module chama o arquivo main.tsx como inicio da aplicacao.
@@ -47,9 +57,11 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
 - O metodo render envia o componente App para a tela.
 - React.StrictMode ajuda a identificar problemas comuns no desenvolvimento.
 - O import de index.css aplica estilo global desde o inicio.
+- O App temporario evita erro de import enquanto os componentes finais ainda nao foram criados.
+- No Passo 8, esse App temporario sera substituido pela versao completa.
 
 ## O que o aluno construiu
-A inicializacao completa do projeto: do HTML ate o primeiro componente React na tela.
+A inicializacao completa do projeto e uma tela temporaria funcional para continuar o tutorial sem quebrar.
 
 [Voltar ao inicio](../README.md)
 
