@@ -1,16 +1,16 @@
-﻿[Voltar ao inicio](../README.md)
+[Voltar ao inicio](../README.md)
 
 # Tutorial Passo 3 - Modelo de dados
-> Capitulo 3 de 11
+> Capítulo 3 de 11
 
 ## 1. Objetivo do passo
-Definir o formato padrao de uma tarefa para todo o projeto.
+Definir o formato padrão de uma tarefa para todo o projeto.
 
-## 2. O que sera aprendido
-- Por que tipar dados evita erros e confusao.
+## 2. O que será aprendido
+- Por que tipar dados evita erros e confusão.
 - Como criar um contrato de dados com TypeScript.
 
-## 3. Codigo necessario
+## 3. Código necessário
 ### src/types/Task.ts
 ```ts
 export interface Task {
@@ -20,19 +20,19 @@ export interface Task {
 }
 ```
 
-## 4. Explicacao linha a linha
+## 4. Explicação linha a linha
 - Pense na interface como uma ficha de cadastro: toda tarefa precisa seguir esse formato.
-- id: identificador unico da tarefa.
+- id: identificador único da tarefa.
 - title: texto da tarefa.
-- completed: informa se a tarefa ja foi concluida.
-- export permite reutilizar esse tipo em varios arquivos.
+- completed: informa se a tarefa já foi concluída.
+- export permite reutilizar esse tipo em vários arquivos.
 
 ## 5. O que o aluno construiu
-Um contrato unico para tarefas, deixando a comunicacao entre componentes mais segura e previsivel.
+Um contrato único para tarefas, deixando a comunicação entre componentes mais segura e previsível.
 
 ## 6. Dicas
 - Use nomes claros nos campos do tipo para facilitar leitura.
-- Mantenha o tipo em arquivo separado para reutilizar em varios componentes.
+- Mantenha o tipo em arquivo separado para reutilizar em vários componentes.
 
 ## 7. Erros comuns
 - Definir campos com tipo incorreto, como completed em string.
@@ -42,8 +42,8 @@ Um contrato unico para tarefas, deixando a comunicacao entre componentes mais se
 - Consegue explicar cada campo de Task.
 - Entende por que tipagem reduz erros na passagem de props.
 
-## 9. Resumo do capitulo
-Voce criou o contrato de dados da tarefa e padronizou a estrutura usada no projeto.
+## 9. Resumo do capítulo
+Você criou o contrato de dados da tarefa e padronizou a estrutura usada no projeto.
 
 [Voltar ao inicio](../README.md)
 

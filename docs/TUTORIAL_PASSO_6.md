@@ -1,16 +1,16 @@
-﻿[Voltar ao inicio](../README.md)
+[Voltar ao inicio](../README.md)
 
 # Tutorial Passo 6 - Componente de item
-> Capitulo 6 de 11
+> Capítulo 6 de 11
 
 ## 1. Objetivo do passo
 Criar o componente que representa uma tarefa individual.
 
-## 2. O que sera aprendido
-- Por que dividir em componentes pequenos facilita manutencao.
-- Como cada item pode ter suas proprias acoes.
+## 2. O que será aprendido
+- Por que dividir em componentes pequenos facilita manutenção.
+- Como cada item pode ter suas próprias ações.
 
-## 3. Codigo necessario
+## 3. Código necessário
 ### src/components/TaskItem.tsx
 ```tsx
 import type { Task } from '../types/Task';
@@ -42,31 +42,31 @@ export const TaskItem = ({ task, onToggle, onRemove }: TaskItemProps) => {
 };
 ```
 
-## 4. Explicacao linha a linha
-- Analogia: cada TaskItem e como uma linha de caderno da sua lista.
-- task traz os dados daquela linha especifica.
+## 4. Explicação linha a linha
+- Analogia: cada TaskItem é como uma linha de caderno da sua lista.
+- task traz os dados daquela linha específica.
 - onToggle muda o status da tarefa (feita ou pendente).
 - onRemove remove a linha da lista.
-- A classe is-completed permite estilo diferente para tarefa concluida.
+- A classe is-completed permite estilo diferente para tarefa concluída.
 - O checkbox reflete o estado atual da tarefa.
 
 ## 5. O que o aluno construiu
-Um item de tarefa completo, com interacao individual e visual adaptado ao status.
+Um item de tarefa completo, com interação individual e visual adaptado ao status.
 
 ## 6. Dicas
-- Use props tipadas para deixar as acoes do item previsiveis.
+- Use props tipadas para deixar as ações do item previsíveis.
 - Aplique classe condicional para refletir visualmente o estado da tarefa.
 
 ## 7. Erros comuns
-- Usar indice do array no lugar do id para operar itens.
+- Usar índice do array no lugar do id para operar itens.
 - Esquecer de repassar o id para onToggle e onRemove.
 
 ## 8. Checkpoints de aprendizado
 - Checkbox altera o status da tarefa correta.
-- Botao remove o item certo da lista.
+- Botão remove o item certo da lista.
 
-## 9. Resumo do capitulo
-Voce montou a unidade visual e funcional de cada tarefa individual.
+## 9. Resumo do capítulo
+Você montou a unidade visual e funcional de cada tarefa individual.
 
 [Voltar ao inicio](../README.md)
 

@@ -1,17 +1,17 @@
-﻿[Voltar ao inicio](../README.md)
+[Voltar ao inicio](../README.md)
 
-# Tutorial Passo 4 - Hook com regras de negocio
-> Capitulo 4 de 11
+# Tutorial Passo 4 - Hook com regras de negócio
+> Capítulo 4 de 11
 
 ## 1. Objetivo do passo
-Criar o hook useTasks para guardar estado, regras de negocio e persistencia.
+Criar o hook useTasks para guardar estado, regras de negócio e persistência.
 
-## 2. O que sera aprendido
-- Por que separar logica da tela deixa o projeto mais limpo.
+## 2. O que será aprendido
+- Por que separar lógica da tela deixa o projeto mais limpo.
 - Como usar useState, useEffect e useMemo juntos.
 - Como salvar e recuperar dados no localStorage.
 
-## 3. Codigo necessario
+## 3. Código necessário
 ### src/hooks/useTasks.ts
 ```ts
 import { useEffect, useMemo, useState } from 'react';
@@ -73,34 +73,34 @@ export const useTasks = () => {
 };
 ```
 
-## 4. Explicacao linha a linha
-- Analogia: este hook e o motor da aplicacao; os componentes serao a lataria.
-- useState guarda a lista de tarefas em memoria.
-- A inicializacao tenta carregar tarefas salvas no localStorage.
-- try/catch protege o app se o dado salvo estiver invalido.
+## 4. Explicação linha a linha
+- Analogia: este hook é o motor da aplicação; os componentes serão a lataria.
+- useState guarda a lista de tarefas em memória.
+- A inicialização tenta carregar tarefas salvas no localStorage.
+- try/catch protege o app se o dado salvo estiver inválido.
 - useEffect salva novamente sempre que tasks muda.
 - addTask cria nova tarefa e impede entrada vazia.
-- toggleTask alterna concluida/pendente pelo id.
+- toggleTask alterna concluída/pendente pelo id.
 - removeTask exclui tarefa pelo id.
-- useMemo calcula total, concluidas e pendentes de forma organizada.
+- useMemo calcula total, concluídas e pendentes de forma organizada.
 
 ## 5. O que o aluno construiu
-Um motor completo da feature To-Do, com regras claras e persistencia automatica.
+Um motor completo da feature To-Do, com regras claras e persistência automática.
 
 ## 6. Dicas
-- Separe logica de negocio da interface sempre que possivel.
+- Separe lógica de negócio da interface sempre que possível.
 - Teste os casos de adicionar, concluir e remover antes de codar.
 
 ## 7. Erros comuns
-- Salvar no localStorage fora do useEffect, gerando codigo confuso.
-- Esquecer de tratar JSON invalido no carregamento inicial.
+- Salvar no localStorage fora do useEffect, gerando código confuso.
+- Esquecer de tratar JSON inválido no carregamento inicial.
 
 ## 8. Checkpoints de aprendizado
-- Consegue explicar quando o useEffect e executado.
+- Consegue explicar quando o useEffect é executado.
 - Consegue descrever o papel de addTask, toggleTask e removeTask.
 
-## 9. Resumo do capitulo
-Voce construiu o motor da aplicacao, com estado, regras e persistencia local.
+## 9. Resumo do capítulo
+Você construiu o motor da aplicação, com estado, regras e persistência local.
 
 [Voltar ao inicio](../README.md)
 

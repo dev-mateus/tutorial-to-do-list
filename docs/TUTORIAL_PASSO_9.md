@@ -1,17 +1,17 @@
-﻿[Voltar ao inicio](../README.md)
+[Voltar ao inicio](../README.md)
 
-# Tutorial Passo 9 - Estilizacao com CSS puro
-> Capitulo 9 de 11
+# Tutorial Passo 9 - Estilização com CSS puro
+> Capítulo 9 de 11
 
 ## 1. Objetivo do passo
 Aplicar o visual final do projeto com CSS puro, incluindo responsividade.
 
-## 2. O que sera aprendido
+## 2. O que será aprendido
 - Por que separar CSS global de CSS da tela principal.
 - Como usar flexbox para layout.
-- Como destacar tarefas concluidas visualmente.
+- Como destacar tarefas concluídas visualmente.
 
-## 3. Codigo necessario
+## 3. Código necessário
 ### src/index.css
 ```css
 :root {
@@ -236,32 +236,32 @@ input {
 }
 ```
 
-## 4. Explicacao linha a linha
-- Analogia: o CSS e a roupa da aplicacao.
+## 4. Explicação linha a linha
+- Analogia: o CSS é a roupa da aplicação.
 - index.css cuida das regras globais (base da roupa).
-- App.css cuida do visual da pagina de tarefas (detalhes da roupa).
+- App.css cuida do visual da página de tarefas (detalhes da roupa).
 - flexbox organiza elementos em linha e coluna de forma simples.
-- hover melhora o feedback quando o usuario passa o mouse.
-- is-completed sinaliza visualmente tarefa concluida.
+- hover melhora o feedback quando o usuário passa o mouse.
+- is-completed sinaliza visualmente tarefa concluída.
 - media query ajusta o layout para celular.
 
 ## 5. O que o aluno construiu
 A interface final, limpa e responsiva, igual ao resultado esperado do projeto.
 
 ## 6. Dicas
-- Separe estilo global de estilo da pagina para manter organizacao.
+- Separe estilo global de estilo da página para manter organização.
 - Teste responsividade reduzindo a largura da janela.
 
 ## 7. Erros comuns
-- Misturar classes sem correspondencia com o JSX.
+- Misturar classes sem correspondência com o JSX.
 - Remover estilos de estados e perder feedback visual.
 
 ## 8. Checkpoints de aprendizado
-- Layout fica legivel em desktop e mobile.
-- Tarefa concluida aparece com visual diferente.
+- Layout fica legível em desktop e mobile.
+- Tarefa concluída aparece com visual diferente.
 
-## 9. Resumo do capitulo
-Voce finalizou a camada visual da aplicacao com CSS puro e responsivo.
+## 9. Resumo do capítulo
+Você finalizou a camada visual da aplicação com CSS puro e responsivo.
 
 [Voltar ao inicio](../README.md)
 

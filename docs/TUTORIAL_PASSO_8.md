@@ -1,16 +1,16 @@
-﻿[Voltar ao inicio](../README.md)
+[Voltar ao inicio](../README.md)
 
 # Tutorial Passo 8 - Montar App principal
-> Capitulo 8 de 11
+> Capítulo 8 de 11
 
 ## 1. Objetivo do passo
-Conectar todos os componentes e o hook para formar a versao funcional da aplicacao.
+Conectar todos os componentes e o hook para formar a versão funcional da aplicação.
 
-## 2. O que sera aprendido
-- Por que o App deve ser um orquestrador, nao um deposito de logica.
-- Como conectar dados e acoes entre hook e componentes.
+## 2. O que será aprendido
+- Por que o App deve ser um orquestrador, não um depósito de lógica.
+- Como conectar dados e ações entre hook e componentes.
 
-## 3. Codigo necessario
+## 3. Código necessário
 ### src/App.tsx
 ```tsx
 import './App.css';
@@ -39,7 +39,7 @@ function App() {
           </article>
           <article>
             <strong>{stats.completed}</strong>
-            <span>Concluidas</span>
+            <span>Concluídas</span>
           </article>
           <article>
             <strong>{stats.pending}</strong>
@@ -56,31 +56,31 @@ function App() {
 export default App;
 ```
 
-## 4. Explicacao linha a linha
-- Pense no App como um maestro: ele coordena, mas nao toca todos os instrumentos.
-- useTasks entrega estado e funcoes prontas.
+## 4. Explicação linha a linha
+- Pense no App como um maestro: ele coordena, mas não toca todos os instrumentos.
+- useTasks entrega estado e funções prontas.
 - TaskInput recebe addTask para incluir novas tarefas.
 - task-stats mostra os contadores calculados no hook.
-- TaskList recebe tarefas e as funcoes de acao.
+- TaskList recebe tarefas e as funções de ação.
 - Assim, cada parte tem responsabilidade clara.
 
 ## 5. O que o aluno construiu
-A primeira versao completa da To-Do App, conectando interface, logica e contadores.
+A primeira versão completa da To-Do App, conectando interface, lógica e contadores.
 
 ## 6. Dicas
-- Mantenha o App como orquestrador: ele conecta pecas, nao concentra regras.
+- Mantenha o App como orquestrador: ele conecta peças, não concentra regras.
 - Leia o retorno do hook como uma API local da feature.
 
 ## 7. Erros comuns
-- Colocar logica de negocio extra dentro do App.
+- Colocar lógica de negócio extra dentro do App.
 - Passar props com nomes diferentes dos esperados nos componentes.
 
 ## 8. Checkpoints de aprendizado
 - Consegue mapear quem fornece e quem consome cada prop.
-- Contadores e acoes funcionam juntos na tela principal.
+- Contadores e ações funcionam juntos na tela principal.
 
-## 9. Resumo do capitulo
-Voce integrou componentes e hook em uma tela completa e funcional.
+## 9. Resumo do capítulo
+Você integrou componentes e hook em uma tela completa e funcional.
 
 [Voltar ao inicio](../README.md)
 
