@@ -1,15 +1,17 @@
 ﻿[Voltar ao inicio](../README.md)
 
 # Tutorial Passo 5 - Componente de entrada
+> Capitulo 5 de 11
 
-## Objetivo do passo
-Criar o formulario para digitar e adicionar novas tarefas.
+## 1. Objetivo do passo
+Criar o formulario que recebe o texto da nova tarefa.
 
-## O que sera aprendido
-- Por que separar entrada de dados em componente proprio.
-- Como controlar input e envio de formulario no React.
+## 2. O que sera aprendido
+- Por que separar a entrada de dados em um componente proprio.
+- Como funciona input controlado no React.
+- Como tratar submit sem recarregar a pagina.
 
-## Codigo necessario
+## 3. Codigo necessario
 ### src/components/TaskInput.tsx
 ```tsx
 import { FormEvent, useState } from 'react';
@@ -42,17 +44,32 @@ export const TaskInput = ({ onAddTask }: TaskInputProps) => {
 };
 ```
 
-## Explicacao linha a linha
-- A interface TaskInputProps define o contrato de props do componente.
-- onAddTask sera recebido do componente pai.
-- useState cria estado local para controlar o texto digitado.
-- handleSubmit evita recarregar a pagina com preventDefault.
-- onAddTask envia o texto atual para a logica principal.
-- setTaskTitle limpa o campo apos enviar.
-- value e onChange tornam o input controlado.
+## 4. Explicacao linha a linha
+- Pense nesse componente como a porta de entrada das tarefas.
+- useState guarda o que o usuario digita.
+- value + onChange deixam o input controlado pelo React.
+- handleSubmit intercepta o envio para nao recarregar a pagina.
+- onAddTask envia o texto para a logica principal.
+- setTaskTitle limpa o campo para facilitar a proxima entrada.
 
-## O que o aluno construiu
-Um formulario reutilizavel e tipado para cadastrar tarefas na aplicacao.
+## 5. O que o aluno construiu
+Um formulario tipado, reutilizavel e pronto para adicionar tarefas.
+
+## 6. Dicas
+- Trate o submit com preventDefault para evitar recarga da pagina.
+- Limpe o input apos adicionar para melhorar a experiencia do usuario.
+
+## 7. Erros comuns
+- Esquecer de controlar o valor do input com useState.
+- Nao tipar corretamente o evento do formulario.
+
+## 8. Checkpoints de aprendizado
+- O input atualiza o estado enquanto voce digita.
+- Ao enviar, onAddTask e chamado e o campo limpa.
+
+## 9. Resumo do capitulo
+Voce criou uma entrada de dados controlada, pronta para alimentar a lista de tarefas.
 
 [Voltar ao inicio](../README.md)
+
 

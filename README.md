@@ -1,19 +1,19 @@
 # To-Do App com React + Vite + TypeScript
 
 ## Introducao
-Este repositorio e um tutorial pratico para construir uma aplicacao front-end de Lista de Tarefas (To-Do App), do nivel iniciante ao intermediario.
+Este repositorio e um tutorial guiado para construir uma aplicacao front-end de Lista de Tarefas (To-Do App), saindo do nivel basico e evoluindo para um nivel iniciante-intermediario.
 
 A proposta e aprender conceitos fundamentais de React com TypeScript em um projeto pequeno, realista e organizado, usando apenas CSS puro.
 
 ## Objetivo do projeto
-Ensinar, passo a passo, como criar uma aplicacao web que aplica boas praticas de front-end:
+Ensinar, passo a passo, como criar uma aplicacao web aplicando boas praticas de front-end:
 - Componentes funcionais e reutilizaveis
 - Hooks para estado e efeitos
 - Tipagem com TypeScript
 - Separacao entre logica, interface e estilos
 
 ## Resumo do que o projeto faz
-A aplicacao permite:
+A aplicacao final permite:
 - Adicionar novas tarefas
 - Exibir lista de tarefas
 - Marcar tarefas como concluidas
@@ -21,11 +21,21 @@ A aplicacao permite:
 - Exibir contadores de total, concluidas e pendentes
 - Salvar os dados no localStorage para manter as tarefas apos recarregar a pagina
 
+## Para quem e este material
+- Quem esta comecando em React
+- Quem quer praticar TypeScript na pratica
+- Quem quer aprender organizacao de projeto sem usar bibliotecas extras de estilo
+
 ## Stack
 - React
 - Vite
 - TypeScript
 - CSS puro
+
+## Pre-requisitos recomendados
+- Saber o basico de HTML e CSS
+- Saber o basico de JavaScript (variaveis, funcoes e arrays)
+- Ter Node.js instalado
 
 ## Como estudar este tutorial
 O README funciona como esqueleto e guia principal.
@@ -36,6 +46,12 @@ Cada etapa detalhada esta em arquivos separados na pasta docs, seguindo o mesmo 
 - Codigo necessario
 - Explicacao linha a linha
 - O que o aluno construiu
+
+Cada tutorial tambem inclui:
+- Dicas
+- Erros comuns
+- Checkpoints de aprendizado
+- Resumo do capitulo
 
 ## Indice do passo a passo
 1. [Passo 1 - Criar base do projeto](docs/TUTORIAL_PASSO_1.md)
@@ -58,5 +74,20 @@ Para cada tutorial, siga sempre esta ordem:
 4. Confirmar que nao ha erros.
 5. Avancar para o proximo passo.
 
+## Regra de progresso
+Nao avance com duvidas acumuladas.
+
+Se um passo nao estiver claro:
+1. Releia o objetivo do passo
+2. Revise a explicacao linha a linha
+3. Use os checkpoints para validar entendimento
+4. So depois avance
+
 ## Resultado esperado ao final
 Ao concluir os 11 passos, voce tera uma To-Do App completa, tipada com TypeScript, organizada por responsabilidade e pronta para servir como base de estudos e evolucao.
+
+Voce tambem tera praticado um fluxo profissional basico de desenvolvimento:
+- Implementar por etapas
+- Validar cada etapa
+- Corrigir erros no caminho
+- Finalizar com build e preview de producao

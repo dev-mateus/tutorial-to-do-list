@@ -1,25 +1,17 @@
 ﻿[Voltar ao inicio](../README.md)
 
 # Tutorial Passo 4 - Hook com regras de negocio
+> Capitulo 4 de 11
 
-## Objetivo do passo
-Criar um hook para concentrar estado, acoes e persistencia das tarefas.
+## 1. Objetivo do passo
+Criar o hook useTasks para guardar estado, regras de negocio e persistencia.
 
-## O que sera aprendido
-- Por que separar logica de negocio do componente App.
-- Como usar useState, useEffect e useMemo em conjunto.
-- Por que preparar a logica antes da tela final acelera os proximos passos.
+## 2. O que sera aprendido
+- Por que separar logica da tela deixa o projeto mais limpo.
+- Como usar useState, useEffect e useMemo juntos.
+- Como salvar e recuperar dados no localStorage.
 
-## Por que este passo vem antes da montagem final do App
-Neste tutorial, criamos primeiro o "motor" da funcionalidade (hook) e depois conectamos tudo na tela principal.
-
-Isso ajuda iniciantes a entenderem melhor a diferenca entre:
-- logica (estado, regras, persistencia)
-- interface (componentes visuais)
-
-No Passo 8, voce vai usar este hook pronto para montar o App final com menos complexidade.
-
-## Codigo necessario
+## 3. Codigo necessario
 ### src/hooks/useTasks.ts
 ```ts
 import { useEffect, useMemo, useState } from 'react';
@@ -81,19 +73,35 @@ export const useTasks = () => {
 };
 ```
 
-## Explicacao linha a linha
+## 4. Explicacao linha a linha
+- Analogia: este hook e o motor da aplicacao; os componentes serao a lataria.
 - useState guarda a lista de tarefas em memoria.
-- A inicializacao do useState ja tenta carregar dados do localStorage.
-- O bloco try/catch evita quebrar a aplicacao se o JSON estiver invalido.
-- useEffect salva no localStorage sempre que tasks muda.
-- addTask normaliza texto e impede tarefas vazias.
-- toggleTask altera apenas a tarefa clicada, mantendo as outras.
-- removeTask remove a tarefa pelo id.
-- useMemo calcula estatisticas com base na lista atual.
-- O retorno do hook entrega dados e funcoes para o App.
+- A inicializacao tenta carregar tarefas salvas no localStorage.
+- try/catch protege o app se o dado salvo estiver invalido.
+- useEffect salva novamente sempre que tasks muda.
+- addTask cria nova tarefa e impede entrada vazia.
+- toggleTask alterna concluida/pendente pelo id.
+- removeTask exclui tarefa pelo id.
+- useMemo calcula total, concluidas e pendentes de forma organizada.
 
-## O que o aluno construiu
-A camada central de logica da To-Do App, com estado organizado e persistencia automatica.
+## 5. O que o aluno construiu
+Um motor completo da feature To-Do, com regras claras e persistencia automatica.
+
+## 6. Dicas
+- Separe logica de negocio da interface sempre que possivel.
+- Teste os casos de adicionar, concluir e remover antes de codar.
+
+## 7. Erros comuns
+- Salvar no localStorage fora do useEffect, gerando codigo confuso.
+- Esquecer de tratar JSON invalido no carregamento inicial.
+
+## 8. Checkpoints de aprendizado
+- Consegue explicar quando o useEffect e executado.
+- Consegue descrever o papel de addTask, toggleTask e removeTask.
+
+## 9. Resumo do capitulo
+Voce construiu o motor da aplicacao, com estado, regras e persistencia local.
 
 [Voltar ao inicio](../README.md)
+
 

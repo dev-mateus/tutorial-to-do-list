@@ -1,16 +1,17 @@
 ﻿[Voltar ao inicio](../README.md)
 
 # Tutorial Passo 2 - Ponto de entrada
+> Capitulo 2 de 11
 
-## Objetivo do passo
-Entender e montar o fluxo de inicializacao da aplicacao no navegador.
+## 1. Objetivo do passo
+Entender como a aplicacao nasce no navegador, do HTML ate o componente React.
 
-## O que sera aprendido
-- Por que existe um arquivo HTML base mesmo em projeto React.
-- Como React entra na pagina e renderiza o App.
-- Como criar um App temporario para manter a trilha progressiva.
+## 2. O que sera aprendido
+- Por que React ainda precisa de um arquivo HTML.
+- Como o arquivo main.tsx conecta o React com a pagina.
+- Como usar um App temporario para nao pular etapas.
 
-## Codigo necessario
+## 3. Codigo necessario
 ### index.html
 ```html
 <!doctype html>
@@ -41,7 +42,7 @@ ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
 );
 ```
 
-### src/App.tsx (temporario neste passo)
+### src/App.tsx (temporario)
 ```tsx
 function App() {
   return <h1>Projeto To-Do iniciado</h1>;
@@ -50,18 +51,32 @@ function App() {
 export default App;
 ```
 
-## Explicacao linha a linha
-- Em index.html, a div root e o ponto onde o React vai desenhar a tela.
-- O script module chama o arquivo main.tsx como inicio da aplicacao.
-- Em main.tsx, ReactDOM.createRoot encontra a div root.
-- O metodo render envia o componente App para a tela.
-- React.StrictMode ajuda a identificar problemas comuns no desenvolvimento.
-- O import de index.css aplica estilo global desde o inicio.
-- O App temporario evita erro de import enquanto os componentes finais ainda nao foram criados.
-- No Passo 8, esse App temporario sera substituido pela versao completa.
+## 4. Explicacao linha a linha
+- Imagine que o HTML e o palco, e o React e o ator.
+- A div root e o local do palco onde o ator vai aparecer.
+- main.tsx pega o componente App e coloca dentro da root.
+- React.StrictMode ajuda a detectar problemas cedo.
+- O App temporario funciona como um teste rapido para garantir que tudo esta conectado.
+- Mais adiante, no Passo 8, voce troca esse App simples pela versao completa.
 
-## O que o aluno construiu
-A inicializacao completa do projeto e uma tela temporaria funcional para continuar o tutorial sem quebrar.
+## 5. O que o aluno construiu
+Um fluxo de inicializacao funcionando de ponta a ponta: HTML, ReactDOM e App na tela.
+
+## 6. Dicas
+- Pense no index.html como a porta de entrada da aplicacao.
+- Mantenha o App temporario simples para testar o fluxo.
+
+## 7. Erros comuns
+- Remover a div com id root do HTML.
+- Importar App com caminho errado no main.tsx.
+
+## 8. Checkpoints de aprendizado
+- Consegue explicar o fluxo index.html para main.tsx para App.tsx.
+- A tela mostra o texto temporario sem erro.
+
+## 9. Resumo do capitulo
+Voce conectou HTML e React e confirmou que o app inicializa corretamente no navegador.
 
 [Voltar ao inicio](../README.md)
+
 

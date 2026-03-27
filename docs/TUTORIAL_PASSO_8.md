@@ -1,15 +1,16 @@
 ﻿[Voltar ao inicio](../README.md)
 
 # Tutorial Passo 8 - Montar App principal
+> Capitulo 8 de 11
 
-## Objetivo do passo
-Conectar componentes visuais com a logica do hook useTasks.
+## 1. Objetivo do passo
+Conectar todos os componentes e o hook para formar a versao funcional da aplicacao.
 
-## O que sera aprendido
-- Por que o App deve orquestrar, e nao concentrar toda a logica.
-- Como compor componentes e passar props entre eles.
+## 2. O que sera aprendido
+- Por que o App deve ser um orquestrador, nao um deposito de logica.
+- Como conectar dados e acoes entre hook e componentes.
 
-## Codigo necessario
+## 3. Codigo necessario
 ### src/App.tsx
 ```tsx
 import './App.css';
@@ -55,16 +56,32 @@ function App() {
 export default App;
 ```
 
-## Explicacao linha a linha
-- O import de useTasks traz a logica da feature sem poluir o App.
-- O hook retorna lista, contadores e funcoes de acao.
-- TaskInput recebe addTask para cadastrar novas tarefas.
-- O bloco task-stats mostra total, concluidas e pendentes.
-- TaskList recebe tarefas e callbacks para concluir e remover.
-- export default App torna este componente o principal da aplicacao.
+## 4. Explicacao linha a linha
+- Pense no App como um maestro: ele coordena, mas nao toca todos os instrumentos.
+- useTasks entrega estado e funcoes prontas.
+- TaskInput recebe addTask para incluir novas tarefas.
+- task-stats mostra os contadores calculados no hook.
+- TaskList recebe tarefas e as funcoes de acao.
+- Assim, cada parte tem responsabilidade clara.
 
-## O que o aluno construiu
-A tela principal funcional da To-Do App, conectando interface e regras de negocio.
+## 5. O que o aluno construiu
+A primeira versao completa da To-Do App, conectando interface, logica e contadores.
+
+## 6. Dicas
+- Mantenha o App como orquestrador: ele conecta pecas, nao concentra regras.
+- Leia o retorno do hook como uma API local da feature.
+
+## 7. Erros comuns
+- Colocar logica de negocio extra dentro do App.
+- Passar props com nomes diferentes dos esperados nos componentes.
+
+## 8. Checkpoints de aprendizado
+- Consegue mapear quem fornece e quem consome cada prop.
+- Contadores e acoes funcionam juntos na tela principal.
+
+## 9. Resumo do capitulo
+Voce integrou componentes e hook em uma tela completa e funcional.
 
 [Voltar ao inicio](../README.md)
+
 

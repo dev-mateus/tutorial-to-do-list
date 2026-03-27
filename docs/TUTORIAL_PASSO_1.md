@@ -1,16 +1,18 @@
 ﻿[Voltar ao inicio](../README.md)
 
 # Tutorial Passo 1 - Criar base do projeto
+> Capitulo 1 de 11
 
-## Objetivo do passo
-Criar o projeto do zero com React + Vite + TypeScript e preparar a estrutura inicial de pastas.
+## 1. Objetivo do passo
+Criar o projeto do zero com React, Vite e TypeScript, deixando tudo pronto para os proximos passos.
 
-## O que sera aprendido
-- Por que comecar pelo bootstrap economiza tempo e evita erros de configuracao.
-- Como criar e validar a base tecnica antes de implementar funcionalidades.
+## 2. O que sera aprendido
+- Por que comecar pela base evita dor de cabeca depois.
+- Como criar o projeto e validar se ele esta funcionando.
+- Como organizar as pastas principais para estudar com clareza.
 
-## Codigo necessario
-### Comandos iniciais (do zero)
+## 3. Codigo necessario
+### Comandos iniciais
 ```bash
 npm create vite@latest to-do-app -- --template react-ts
 cd to-do-app
@@ -18,7 +20,7 @@ npm install
 npm run dev
 ```
 
-### Estrutura de pastas a criar agora
+### Pastas que vamos usar no tutorial
 ```txt
 src/
   components/
@@ -26,119 +28,38 @@ src/
   types/
 ```
 
-### package.json
-```json
-{
-  "name": "to-do-app",
-  "private": true,
-  "version": "0.0.0",
-  "type": "module",
-  "scripts": {
-    "dev": "vite",
-    "build": "tsc -b && vite build",
-    "preview": "vite preview"
-  },
-  "dependencies": {
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1"
-  },
-  "devDependencies": {
-    "@types/node": "^22.10.1",
-    "@types/react": "^18.3.12",
-    "@types/react-dom": "^18.3.1",
-    "@vitejs/plugin-react": "^4.3.4",
-    "typescript": "^5.6.3",
-    "vite": "^5.4.10"
-  }
-}
-```
-
-### vite.config.ts
-```ts
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
-
-export default defineConfig({
-  plugins: [react()],
-});
-```
-
-### tsconfig.json
-```json
-{
-  "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ]
-}
-```
-
-### tsconfig.app.json
-```json
-{
-  "compilerOptions": {
-    "target": "ES2020",
-    "useDefineForClassFields": true,
-    "lib": ["ES2020", "DOM", "DOM.Iterable"],
-    "module": "ESNext",
-    "skipLibCheck": true,
-    "moduleResolution": "bundler",
-    "allowImportingTsExtensions": false,
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "noEmit": true,
-    "jsx": "react-jsx",
-    "strict": true,
-    "noUnusedLocals": true,
-    "noUnusedParameters": true,
-    "noFallthroughCasesInSwitch": true
-  },
-  "include": ["src"]
-}
-```
-
-### tsconfig.node.json
-```json
-{
-  "compilerOptions": {
-    "composite": true,
-    "skipLibCheck": true,
-    "module": "ESNext",
-    "moduleResolution": "bundler",
-    "allowSyntheticDefaultImports": true,
-    "types": ["node"],
-    "strict": true
-  },
-  "include": ["vite.config.ts"]
-}
-```
-
 ### src/vite-env.d.ts
 ```ts
 /// <reference types="vite/client" />
 ```
 
-## Explicacao linha a linha
-- Primeiro, os comandos criam a base oficial do Vite com React e TypeScript.
-- npm install baixa as dependencias necessarias para rodar o projeto.
-- npm run dev valida se o ambiente inicial esta funcionando.
-- A criacao de components, hooks e types prepara a organizacao didatica da feature.
-- Em package.json, o bloco scripts define os comandos principais do projeto.
-- O script dev inicia o servidor local com Vite para desenvolvimento rapido.
-- O script build valida TypeScript e gera versao de producao.
-- O script preview abre localmente a versao final compilada.
-- Em dependencies ficam bibliotecas usadas no app em execucao.
-- Em devDependencies ficam ferramentas usadas apenas para desenvolver.
-- Em vite.config.ts, defineConfig organiza a configuracao do Vite.
-- O plugin react habilita suporte a JSX e recursos do React.
-- Em tsconfig.json, references divide a configuracao em duas partes.
-- tsconfig.app.json cobre o codigo da pasta src.
-- tsconfig.node.json cobre arquivos que rodam no ambiente Node.
-- vite-env.d.ts adiciona os tipos do Vite desde o inicio, evitando erro com import de CSS.
+## 4. Explicacao linha a linha
+- Pense no projeto como uma casa: antes de decorar, voce precisa da fundacao.
+- npm create vite cria essa fundacao pronta para React + TypeScript.
+- cd to-do-app entra na pasta do projeto.
+- npm install baixa os pacotes necessarios.
+- npm run dev liga o servidor local para voce testar no navegador.
+- A separacao em components, hooks e types e como separar comodos da casa: cada coisa no seu lugar.
+- O arquivo vite-env.d.ts ensina ao TypeScript como entender recursos do Vite, como import de CSS.
 
-## O que o aluno construiu
-Um projeto criado do zero, com estrutura inicial organizada e configuracao alinhada ao resultado final.
+## 5. O que o aluno construiu
+Uma base profissional e organizada, pronta para receber as funcionalidades da To-Do App sem improviso.
+
+## 6. Dicas
+- Rode npm run dev logo apos criar o projeto para validar a base.
+- Crie as pastas components, hooks e types no inicio para evitar bagunca depois.
+
+## 7. Erros comuns
+- Esquecer de executar npm install antes do npm run dev.
+- Criar o projeto sem template TypeScript, usando react em vez de react-ts.
+
+## 8. Checkpoints de aprendizado
+- Consegue abrir o projeto no navegador sem erro.
+- Entende para que servem package.json e vite.config.ts.
+
+## 9. Resumo do capitulo
+Voce montou a fundacao do projeto e preparou o terreno para construir funcionalidades com seguranca.
 
 [Voltar ao inicio](../README.md)
+
 

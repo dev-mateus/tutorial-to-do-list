@@ -1,15 +1,17 @@
 ﻿[Voltar ao inicio](../README.md)
 
 # Tutorial Passo 7 - Componente de lista
+> Capitulo 7 de 11
 
-## Objetivo do passo
-Renderizar todas as tarefas de forma organizada e tratar o estado de lista vazia.
+## 1. Objetivo do passo
+Montar o componente que exibe todas as tarefas e trata o caso de lista vazia.
 
-## O que sera aprendido
-- Por que separar a lista do item simplifica o App.
-- Como usar map com key e condicao de renderizacao.
+## 2. O que sera aprendido
+- Por que a lista deve ficar separada do App.
+- Como renderizar varios itens com map.
+- Como mostrar uma mensagem quando nao houver tarefas.
 
-## Codigo necessario
+## 3. Codigo necessario
 ### src/components/TaskList.tsx
 ```tsx
 import type { Task } from '../types/Task';
@@ -36,16 +38,32 @@ export const TaskList = ({ tasks, onToggleTask, onRemoveTask }: TaskListProps) =
 };
 ```
 
-## Explicacao linha a linha
-- TaskListProps tipa os dados e funcoes que entram no componente.
-- tasks.length === 0 trata o caso sem tarefas.
-- A ul sera exibida somente quando houver itens.
-- map percorre o array tasks e gera um TaskItem por tarefa.
-- key usa task.id para o React rastrear cada item da lista.
-- onToggleTask e onRemoveTask sao repassados para cada TaskItem.
+## 4. Explicacao linha a linha
+- Analogia: TaskList e a prancheta que organiza todos os TaskItem.
+- tasks recebe o conjunto de tarefas.
+- O if evita tela vazia sem explicacao para o usuario.
+- map percorre a lista e cria um TaskItem para cada tarefa.
+- key ajuda o React a identificar cada item de forma unica.
+- As funcoes de concluir e remover sao repassadas para cada item.
 
-## O que o aluno construiu
-Um componente de listagem completo, com estado vazio e renderizacao dinamica dos itens.
+## 5. O que o aluno construiu
+Uma lista dinamica e reutilizavel, com boa experiencia mesmo quando nao ha tarefas.
+
+## 6. Dicas
+- Sempre trate o estado de lista vazia para nao deixar tela sem contexto.
+- Use key estavel para cada item renderizado.
+
+## 7. Erros comuns
+- Usar key com indice do array em listas que mudam.
+- Renderizar TaskItem sem repassar callbacks necessarios.
+
+## 8. Checkpoints de aprendizado
+- Mensagem de vazio aparece quando nao ha tarefas.
+- Com tarefas, a lista renderiza todos os itens corretamente.
+
+## 9. Resumo do capitulo
+Voce organizou a renderizacao da lista com boa experiencia para cenarios vazio e preenchido.
 
 [Voltar ao inicio](../README.md)
+
 

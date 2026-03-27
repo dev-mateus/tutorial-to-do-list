@@ -1,15 +1,17 @@
 ﻿[Voltar ao inicio](../README.md)
 
 # Tutorial Passo 9 - Estilizacao com CSS puro
+> Capitulo 9 de 11
 
-## Objetivo do passo
-Aplicar um layout limpo, legivel e responsivo usando apenas CSS puro.
+## 1. Objetivo do passo
+Aplicar o visual final do projeto com CSS puro, incluindo responsividade.
 
-## O que sera aprendido
-- Por que separar CSS global de CSS da pagina.
-- Como usar flexbox, hover e estilo visual para tarefa concluida.
+## 2. O que sera aprendido
+- Por que separar CSS global de CSS da tela principal.
+- Como usar flexbox para layout.
+- Como destacar tarefas concluidas visualmente.
 
-## Codigo necessario
+## 3. Codigo necessario
 ### src/index.css
 ```css
 :root {
@@ -234,19 +236,33 @@ input {
 }
 ```
 
-## Explicacao linha a linha
-- index.css define padroes globais para toda aplicacao.
-- O reset com * evita variacoes inesperadas entre navegadores.
-- body recebe fundo e altura minima para ocupar a tela.
-- Em App.css, app-shell centraliza o card com flexbox.
-- task-input organiza input e botao em linha com gap.
-- task-stats e task-list estruturam contadores e lista de tarefas.
-- button:hover melhora feedback visual para o usuario.
-- is-completed destaca visualmente tarefa finalizada.
-- O media query adapta layout para telas menores.
+## 4. Explicacao linha a linha
+- Analogia: o CSS e a roupa da aplicacao.
+- index.css cuida das regras globais (base da roupa).
+- App.css cuida do visual da pagina de tarefas (detalhes da roupa).
+- flexbox organiza elementos em linha e coluna de forma simples.
+- hover melhora o feedback quando o usuario passa o mouse.
+- is-completed sinaliza visualmente tarefa concluida.
+- media query ajusta o layout para celular.
 
-## O que o aluno construiu
-Uma interface completa e identica ao resultado final do projeto, com responsividade e estados visuais.
+## 5. O que o aluno construiu
+A interface final, limpa e responsiva, igual ao resultado esperado do projeto.
+
+## 6. Dicas
+- Separe estilo global de estilo da pagina para manter organizacao.
+- Teste responsividade reduzindo a largura da janela.
+
+## 7. Erros comuns
+- Misturar classes sem correspondencia com o JSX.
+- Remover estilos de estados e perder feedback visual.
+
+## 8. Checkpoints de aprendizado
+- Layout fica legivel em desktop e mobile.
+- Tarefa concluida aparece com visual diferente.
+
+## 9. Resumo do capitulo
+Voce finalizou a camada visual da aplicacao com CSS puro e responsivo.
 
 [Voltar ao inicio](../README.md)
+
 
