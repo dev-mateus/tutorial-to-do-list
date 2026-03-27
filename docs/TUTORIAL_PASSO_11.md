@@ -18,9 +18,24 @@ npm run preview
 ```
 
 ## 4. Explicação linha a linha
-- npm run dev inicia o servidor de desenvolvimento com recarga automática a cada alteração salva.
-- npm run build executa a checagem de tipos configurada pelo TypeScript e gera os arquivos finais de produção.
-- npm run preview sobe um servidor local usando o resultado gerado em dist para simular a aplicação publicada.
+- O comando abaixo inicia o servidor de desenvolvimento com recarga automática a cada alteração salva.
+
+```bash
+npm run dev
+```
+
+- O comando abaixo executa a checagem de tipos configurada pelo TypeScript e gera os arquivos finais de produção.
+
+```bash
+npm run build
+```
+
+- O comando abaixo sobe um servidor local usando o resultado gerado em dist para simular a aplicação publicada.
+
+```bash
+npm run preview
+```
+
 - Quando os três comandos funcionam sem erro, o projeto está consistente tanto para desenvolvimento quanto para entrega.
 
 ## 5. O que o aluno construiu
@@ -35,8 +50,18 @@ Um ciclo completo de validação do projeto, do desenvolvimento ao teste final d
 - Parar no primeiro comando e não validar o fluxo completo.
 
 ## 8. Checkpoints de aprendizado
-- Execute npm run dev e verifique no navegador se a aplicação abre e permite adicionar, concluir e remover tarefas normalmente.
-- Execute npm run build e depois npm run preview; no navegador, confirme que a versão de produção também abre com o mesmo comportamento da versão de desenvolvimento.
+- Execute o comando abaixo e verifique no navegador se a aplicação abre e permite adicionar, concluir e remover tarefas normalmente.
+
+```bash
+npm run dev
+```
+
+- Depois execute os comandos abaixo e confirme no navegador que a versão de produção também abre com o mesmo comportamento da versão de desenvolvimento.
+
+```bash
+npm run build
+npm run preview
+```
 
 ## 9. Resumo do capítulo
 Você concluiu o ciclo profissional básico: desenvolver, compilar e validar o projeto final.

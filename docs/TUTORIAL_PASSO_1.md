@@ -61,10 +61,25 @@ to-do-app/                   ← pasta raiz do projeto
 ```
 
 ## 4. Explicação linha a linha
-- npm create vite@latest to-do-app -- --template react-ts gera um projeto React com TypeScript já configurado pelo Vite.
+- O comando abaixo gera um projeto React com TypeScript já configurado pelo Vite.
+
+```bash
+npm create vite@latest to-do-app -- --template react-ts
+```
+
 - cd to-do-app muda o terminal para a pasta raiz do projeto, onde os próximos comandos serão executados.
-- npm install instala as dependências listadas no package.json.
-- npm run dev inicia o servidor de desenvolvimento local.
+- O comando abaixo instala as dependências listadas no package.json.
+
+```bash
+npm install
+```
+
+- O comando abaixo inicia o servidor de desenvolvimento local.
+
+```bash
+npm run dev
+```
+
 - As pastas components, hooks e types preparam a organização do código por responsabilidade.
 - O arquivo src/vite-env.d.ts registra os tipos do Vite para que o TypeScript reconheça recursos do ambiente, como importação de CSS.
 
@@ -72,15 +87,31 @@ to-do-app/                   ← pasta raiz do projeto
 Uma base profissional e organizada, pronta para receber as funcionalidades da To-Do App sem improviso.
 
 ## 6. Dicas
-- Rode npm run dev logo após criar o projeto para validar a base.
+- Execute o comando abaixo logo após criar o projeto para validar a base.
+
+```bash
+npm run dev
+```
+
 - Crie as pastas components, hooks e types no início para evitar bagunça depois.
 
 ## 7. Erros comuns
-- Esquecer de executar npm install antes do npm run dev.
+- Esquecer de executar os comandos abaixo na ordem correta.
+
+```bash
+npm install
+npm run dev
+```
+
 - Criar o projeto sem template TypeScript, usando react em vez de react-ts.
 
 ## 8. Checkpoints de aprendizado
-- Rode npm run dev e verifique no navegador se a aplicação padrão do Vite abre sem tela em branco ou erro de compilação.
+- Execute o comando abaixo e verifique no navegador se a aplicação padrão do Vite abre sem tela em branco ou erro de compilação.
+
+```bash
+npm run dev
+```
+
 - Confirme que a estrutura base do projeto existe na pasta to-do-app e que a pasta src já contém os arquivos principais gerados pelo Vite.
 
 ## 9. Resumo do capítulo

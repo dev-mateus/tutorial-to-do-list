@@ -77,7 +77,12 @@ Um fluxo de inicialização funcionando de ponta a ponta: HTML, ReactDOM e App n
 - Importar App com caminho errado no main.tsx.
 
 ## 8. Checkpoints de aprendizado
-- Rode npm run dev e verifique no navegador se a página exibe o texto Projeto To-Do iniciado.
+- Execute o comando abaixo e verifique no navegador se a página exibe o texto Projeto To-Do iniciado.
+
+```bash
+npm run dev
+```
+
 - Confirme que não há erro no console do navegador e que alterar o texto em src/App.tsx atualiza a tela ao salvar.
 
 ## 9. Resumo do capítulo

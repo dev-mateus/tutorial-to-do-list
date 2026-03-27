@@ -269,7 +269,12 @@ A interface final, limpa e responsiva, igual ao resultado esperado do projeto.
 - Remover estilos de estados e perder feedback visual.
 
 ## 8. Checkpoints de aprendizado
-- Rode npm run dev e verifique no navegador se a aplicação aparece estilizada, centralizada na tela e diferente do visual padrão do Vite.
+- Execute o comando abaixo e verifique no navegador se a aplicação aparece estilizada, centralizada na tela e diferente do visual padrão do Vite.
+
+```bash
+npm run dev
+```
+
 - Adicione uma tarefa, marque como concluída e reduza a largura da janela para confirmar mudança visual do item concluído e ajuste responsivo no layout.
 
 ## 9. Resumo do capítulo

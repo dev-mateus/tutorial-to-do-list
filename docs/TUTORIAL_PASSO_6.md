@@ -66,7 +66,12 @@ Um item de tarefa completo, com interação individual e visual adaptado ao stat
 - Esquecer de repassar o id para onToggle e onRemove.
 
 ## 8. Checkpoints de aprendizado
-- Rode npm run dev e verifique no navegador se a tela ainda continua igual ao passo anterior, porque TaskItem foi criado mas ainda não foi usado dentro da aplicação.
+- Execute o comando abaixo e verifique no navegador se a tela ainda continua igual ao passo anterior, porque TaskItem foi criado mas ainda não foi usado dentro da aplicação.
+
+```bash
+npm run dev
+```
+
 - Confirme no editor que o componente TaskItem não apresenta erro de props e que o arquivo foi salvo com importações corretas.
 
 ## 9. Resumo do capítulo

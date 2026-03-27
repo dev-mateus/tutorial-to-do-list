@@ -41,7 +41,12 @@ Um contrato único para tarefas, deixando a comunicação entre componentes mais
 - Criar tipos diferentes para a mesma entidade em arquivos distintos.
 
 ## 8. Checkpoints de aprendizado
-- Rode npm run dev e verifique no navegador se a tela continua exibindo Projeto To-Do iniciado, sem mudanças visuais neste passo.
+- Execute o comando abaixo e verifique no navegador se a tela continua exibindo Projeto To-Do iniciado, sem mudanças visuais neste passo.
+
+```bash
+npm run dev
+```
+
 - Confirme no editor que a interface Task foi criada sem erro de sintaxe e que o projeto continua compilando normalmente.
 
 ## 9. Resumo do capítulo

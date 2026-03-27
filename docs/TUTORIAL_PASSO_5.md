@@ -68,7 +68,12 @@ Um formulário tipado, reutilizável e pronto para adicionar tarefas.
 - Não tipar corretamente o evento do formulário.
 
 ## 8. Checkpoints de aprendizado
-- Rode npm run dev e verifique no navegador se a tela continua igual ao passo anterior, porque TaskInput foi criado mas ainda não foi renderizado pelo App.
+- Execute o comando abaixo e verifique no navegador se a tela continua igual ao passo anterior, porque TaskInput foi criado mas ainda não foi renderizado pelo App.
+
+```bash
+npm run dev
+```
+
 - Confirme no editor que o componente aceita a prop onAddTask sem erro de tipagem e que salvar o arquivo não quebra a compilação.
 
 ## 9. Resumo do capítulo

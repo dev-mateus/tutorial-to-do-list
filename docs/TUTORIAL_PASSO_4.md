@@ -102,7 +102,12 @@ Um motor completo da feature To-Do, com regras claras e persistência automátic
 - Esquecer de tratar JSON inválido no carregamento inicial.
 
 ## 8. Checkpoints de aprendizado
-- Rode npm run dev e verifique no navegador se a tela ainda mostra Projeto To-Do iniciado, porque o hook foi criado mas ainda não está conectado ao App.
+- Execute o comando abaixo e verifique no navegador se a tela ainda mostra Projeto To-Do iniciado, porque o hook foi criado mas ainda não está conectado ao App.
+
+```bash
+npm run dev
+```
+
 - Confirme no editor que o arquivo src/hooks/useTasks.ts não apresenta erro e que o projeto continua compilando sem avisos de importação ou tipagem.
 
 ## 9. Resumo do capítulo

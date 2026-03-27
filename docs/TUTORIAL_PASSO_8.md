@@ -80,7 +80,12 @@ A primeira versão completa da To-Do App, conectando interface, lógica e contad
 - Passar props com nomes diferentes dos esperados nos componentes.
 
 ## 8. Checkpoints de aprendizado
-- Rode npm run dev e verifique no navegador se a interface completa da lista de tarefas aparece, com título, campo de entrada, contadores e área da lista.
+- Execute o comando abaixo e verifique no navegador se a interface completa da lista de tarefas aparece, com título, campo de entrada, contadores e área da lista.
+
+```bash
+npm run dev
+```
+
 - Adicione uma tarefa, marque como concluída e remova o item para confirmar que o hook e os componentes estão integrados corretamente.
 
 ## 9. Resumo do capítulo

@@ -61,7 +61,12 @@ Uma lista dinâmica e reutilizável, com boa experiência mesmo quando não há 
 - Renderizar TaskItem sem repassar callbacks necessários.
 
 ## 8. Checkpoints de aprendizado
-- Rode npm run dev e verifique no navegador se a tela ainda não mudou visualmente, porque TaskList foi criado mas ainda será conectado no Passo 8.
+- Execute o comando abaixo e verifique no navegador se a tela ainda não mudou visualmente, porque TaskList foi criado mas ainda será conectado no Passo 8.
+
+```bash
+npm run dev
+```
+
 - Confirme no editor que o componente aceita um array de tarefas e callbacks sem erro de tipagem.
 
 ## 9. Resumo do capítulo

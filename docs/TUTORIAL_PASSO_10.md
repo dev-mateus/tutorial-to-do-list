@@ -36,7 +36,12 @@ Uma base de tipagem mais estável, com melhor suporte do editor e do compilador.
 - Apagar a referência vite/client e voltar a ter erro de import de CSS.
 
 ## 8. Checkpoints de aprendizado
-- Rode npm run dev e verifique no navegador se a aplicação continua abrindo normalmente após revisar o arquivo.
+- Execute o comando abaixo e verifique no navegador se a aplicação continua abrindo normalmente após revisar o arquivo.
+
+```bash
+npm run dev
+```
+
 - Confirme no editor que não existe erro de tipagem nos imports de CSS de src/main.tsx e src/App.tsx.
 
 ## 9. Resumo do capítulo
